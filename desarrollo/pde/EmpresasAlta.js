@@ -1,5 +1,18 @@
 $(document).ready(function(){	
 
+
+	var solicitar = document.getElementById("solicitaMisVis");
+	
+	   if($('#solicitaMisVis').attr('checked',true)){
+            $('#vision').prop('disabled', true);
+			$('#mision').prop('disabled', true);
+        }
+        else{
+        	$('#vision').prop('disabled', false);
+			$('#mision').prop('disabled', false);
+            
+        }
+
 	$('#Guardar').click(function(){
 
 		var nombreV = $('#nombre_empresa').val();

@@ -179,6 +179,8 @@
               <label>Descrip&oacute; de servicios*</label>
               <textarea  rows="3" class="form-control" name="descripcion" id="descripcion" style="resize:none;overflow:auto;"></textarea>
 
+              <input type="checkbox" name="solicita" id="solicitaMisVis"/>Solicitar generación de Misión y Visión de mi empresa<br/>
+
               <label>Visi&oacute;n*</label>
               <textarea  rows="3" class="form-control" name="vision" id="vision" style="resize:none;overflow:auto;"></textarea>
 
