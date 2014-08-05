@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<rem:log xmlns:rem="http://rem.lsi.us.es">
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>FRQ-0011</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0010</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [REQ_10 - Administración de apoyos municipales] -> [REQ_10 - Administración de usuarios]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Documento de Requisitos del Sistema] -> [Matriz de rastreabilidad del proyecto PDE]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [TRM-0001] Matriz de rastreabilidad V1 con 0 hijos y 0 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida organización cliente [ORG-0001] UPIIZ-CDS]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0011</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [REQ_11 - Administración de usuarios] -> [REQ_11 - Administración del sitio]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [TRM-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>FRQ-0012</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [STK-0001] Roberto Barraza con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada fila [NonFunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida organización desarrolladora [ORG-0001] UPIIZ-CDS]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0010</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [REQ_10 - Administración de usuarios] -> [REQ_10 - Administración de apoyos municipales]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada columna [FunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0012</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0001] REQ_1 - Padrón de empresas]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada fila [FunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0012] REQ_12 - Vinculación default empresa-universidad]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [FunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0001] REQ_1 - Padrón de empresas]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0003</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0003] REQ_3 - Validación de registros nuevos]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0002</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0002] REQ_2 - Vinculación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada columna [NonFunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada traza desde [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada traza hacia [FRQ-0001] REQ_1 - Padrón de empresas]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0003</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada traza desde [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada traza hacia [FRQ-0003] REQ_3 - Validación de registros nuevos]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0002</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada traza desde [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada traza hacia [FRQ-0002] REQ_2 - Vinculación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0001] REQ_1 - Padrón de empresas]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0003] REQ_3 - Validación de registros nuevos]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0003</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0002] REQ_2 - Vinculación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0002</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0012</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0012</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0005] REQ_5 - Padrón universidad]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [NonFunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0005</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0012] REQ_12 - Vinculación default empresa-universidad]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida columna [FunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0012] REQ_12 - Vinculación default empresa-universidad]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0007] REQ_7 - Motor de búsqueda]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0007</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0008] REQ_8 - Administración de avisos]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0008</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0009] REQ_9 - Administración de apoyos municipales]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0010] REQ_10 - Administración de usuarios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0010</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0004] REQ_4 - Registro y login de usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0005] REQ_5 - Padrón universidad]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0005</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0006] REQ_6 - Apoyos municipales]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>NFR-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0011] REQ_11 - Administración del sitio]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0011</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [NFR-0001] Interfaces con el usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0010] REQ_10 - Administración de usuarios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0010</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0001] REQ_1 - Padrón de empresas]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0003</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0001] REQ_1 - Padrón de empresas]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0003] REQ_3 - Validación de registros nuevos]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0003</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0005] REQ_5 - Padrón universidad]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0005</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0003] REQ_3 - Validación de registros nuevos]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0007</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0001] REQ_1 - Padrón de empresas]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0007] REQ_7 - Motor de búsqueda]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0007</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0009] REQ_9 - Administración de servicios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0007</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0005] REQ_5 - Padrón universidad]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0005</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0007] REQ_7 - Motor de búsqueda]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0005</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada traza hacia [FRQ-0003] REQ_3 - Validación de registros nuevos]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0003</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada traza desde [FRQ-0005] REQ_5 - Padrón universidad]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada traza hacia [FRQ-0003] REQ_3 - Validación de registros nuevos]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0003</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada traza desde [FRQ-0001] REQ_1 - Padrón de empresas]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [TRM-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0002</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0001] REQ_1 - Padrón de empresas]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0002] REQ_2 - Vinculación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0002</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0005] REQ_5 - Padrón universidad]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0005</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0002] REQ_2 - Vinculación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0003] REQ_3 - Validación de registros nuevos]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0003</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0001] REQ_1 - Padrón de empresas]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0005</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0003] REQ_3 - Validación de registros nuevos]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0003</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0005] REQ_5 - Padrón universidad]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0010</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza desde [FRQ-0004] REQ_4 - Registro y login de usuario]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>FRQ-0010</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>FRQ-0008</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>FRQ-0007</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>FRQ-0005</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>FRQ-0003</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>FRQ-0002</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [FRQ-0009] REQ_9 - Administración de servicios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [FRQ-0002]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>FRQ-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento creado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento creado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada traza hacia [FRQ-0010] REQ_10 - Administración de usuarios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0010</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada traza desde [FRQ-0001] REQ_1 - Padrón de empresas]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>ORG-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento creado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento creado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>8</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida columna [NonFunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>FRQ-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada traza hacia [FRQ-0009] REQ_9 - Administración de servicios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2014</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+</rem:log>
