@@ -1,0 +1,20 @@
+/* ==================================================
+   Add your own style here. This file will overide properties described in any other css file.
+================================================== */
+
+.login-css { 
+background: url(http://www.bolsasybolsillos.com.mx/wp-content/uploads/2013/06/shutterstock_18594896.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+
+.loginPDE-css { 
+background: url(http://www.conexion58.com/wp-content/uploads/2014/03/Familas-fresnillenses..jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
