@@ -21,7 +21,7 @@
 <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css" media="screen" /><![endif]-->
 <!-- Color Style -->
 <link href="colors/color1.css" rel="stylesheet" type="text/css"> 
-<link href="css/custom.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css"> 
 <!-- SCRIPTS
   ================================================== -->
 <script src="js/modernizr.js"></script><!-- Modernizr -->
@@ -38,7 +38,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-6 col-xs-8">
-            <h1 class="logo"> <a href="PED_DIAG_Index.php.html"><img src="images/logo2.png" alt="Logo"></a> </h1>
+            <h1 class="logo"> <a href="index.html"><img src="images/logo2.png" alt="Logo"></a> </h1>
           </div>
           <div class="copyrights-col-right col-md-6 col-sm-6">
             <div class="social-icons"> <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a> <a href="http://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a> <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a> <a href="http://www.pinterest.com/" target="_blank"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-rss"></i></a> </div>
@@ -54,7 +54,15 @@
           <div class="col-md-12">
             <nav class="navigation">
               <ul class="sf-menu">
-                <li><a href="PED_DIAG_EmpresasIndex.php"><i class="fa fa-building fa-lg"></i>&nbsp;&nbsp;&nbsp;Empresas</a>
+                <li><a href="PED_DIAG_index.php"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Incio</a>
+                  <!--<ul class="dropdown">
+                    <li><a href="index.html">Home version 1</a></li>
+                    <li><a href="index1.html">Home version 2</a></li>
+                    <li><a href="index2.html">Home version 3</a></li>
+                    <li><a href="index3.html">Home version 4</a></li>
+                  </ul>-->
+                </li>
+               <li><a href="PED_DIAG_EmpresasIndex.php"><i class="fa fa-building fa-lg"></i>&nbsp;&nbsp;&nbsp;Empresas</a>
                   <!--<ul class="dropdown">
                     <li><a href="index.html">Home version 1</a></li>
                     <li><a href="index1.html">Home version 2</a></li>
@@ -69,7 +77,7 @@
                     <li><a href="our-staff.html">Our Staff</a></li>
                   </ul>-->
                 </li>                
-                <li><a href="PED_DIAG_ApoyosMunicipalesIndex.php"><i class="fa fa-users fa-lg"></i>&nbsp;&nbsp;&nbsp;Apoyos</a>
+                <li><a href="PED_DIAG_ApoyosMuinicipalesIndex.php"><i class="fa fa-users fa-lg"></i>&nbsp;&nbsp;&nbsp;Apoyos</a>
                   <!--<ul class="dropdown">
                     <li><a href="events.html">Events Listing</a></li>
                     <li><a href="events-timeline.html">Events Timeline</a></li>
@@ -78,10 +86,10 @@
                     <li><a href="single-event.html">Single Event</a></li>
                   </ul>-->
                 </li>
-                <li><a href="#"><i class="fa fa-search fa-lg"></i>&nbsp;&nbsp;&nbsp;Busqueda</a>
+                <li><a href="PED_DIAG_Busqueda.php"><i class="fa fa-search fa-lg"></i>&nbsp;&nbsp;&nbsp;Busqueda</a>
                   <ul class="dropdown">
-                    <li><a href="PED_DIAG_BusquedaVacantes.php">Vacantes</a></li>
-                    <li><a href="PED_DIAG_BusquedaServicios.php">Servicios</a></li>
+                    <li><a href="sermons.html">Vacantes</a></li>
+                    <li><a href="single-sermon.html">Concepto</a></li>
                   </ul>
                 </li>
                 
@@ -94,36 +102,87 @@
     </div>
   </header>
   <!-- End Site Header --> 
-
-  <!-- Start Hero Slider -->
-  <div class="hero-slider flexslider clearfix" data-autoplay="yes" data-pagination="yes" data-arrows="yes" data-style="fade" data-pause="yes">
-    <ul class="slides">
-      <li class="parallax" style="background-image:url(http://www.conexion58.com/wp-content/uploads/2014/03/Familas-fresnillenses..jpg);"></li>
-      <li class=" parallax" style="background-image:url(http://www.conexion58.com/wp-content/uploads/2014/03/RENAVE..jpg);"></li>
-      <li class="parallax" style="background-image:url(http://www.conexion58.com/wp-content/uploads/2014/02/ecologia..jpg);"></li>
-    </ul>
-  </div>
-  <!-- End Hero Slider --> 
-  <!-- Start Notice Bar -->
-  <div class="notice-bar">
+  <!-- Start Nav Backed Header -->
+  <div class="nav-backed-header parallax" style="background-image:url(http://www.bolsaplus.com/datos/imagenes/empresa.jpg);">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-6 notice-bar-title"> <span class="notice-bar-title-icon hidden-xs"><i class="fa fa-calendar fa-3x"></i></span> <span class="title-note">Next</span> <strong>Upcoming Event</strong> </div>
-        <div class="col-md-3 col-sm-6 col-xs-6 notice-bar-event-title">
-          <h5><a href="single-event.html">Sountheast Asia Meet</a></h5>
-          <span class="meta-data">13th July, 2015</span> </div>
-        <div id="counter" class="col-md-4 col-sm-6 col-xs-12 counter" data-date="July 13, 2015">
-          <div class="timer-col"> <span id="days"></span> <span class="timer-type">days</span> </div>
-          <div class="timer-col"> <span id="hours"></span> <span class="timer-type">hrs</span> </div>
-          <div class="timer-col"> <span id="minutes"></span> <span class="timer-type">mins</span> </div>
-          <div class="timer-col"> <span id="seconds"></span> <span class="timer-type">secs</span> </div>
+        <div class="col-md-12">
+          <ol class="breadcrumb">
+            <li><a href="index.html">Index</a></li>
+            <li class="active">Busqueda</li>
+          </ol>
         </div>
-        <div class="col-md-2 col-sm-6 hidden-xs"> <a href="events.html" class="btn btn-primary btn-lg btn-block">All Events</a> </div>
       </div>
     </div>
   </div>
-  <!-- End Notice Bar --> 
-  
+  <!-- End Nav Backed Header --> 
+  <!-- Start Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="drop-caps secondary">B</br></br><h1>usaqueda de Vacantes</h1></p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Page Header --> 
+  <!-- Start Content -->
+  <div class="main" role="main">
+    <div id="content" class="content full">
+      <div class="container">
+        <div class="row">
+          <!-- Start Colum 1 -->
+          <div class="col-md-12"  align="center" style="overflow-y:scroll;height:400px">        
+          </br> 
+           <h4 class="spaced">Padr&oacute;n de Empresas con Vacantes</h4>
+          <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th> ID </th>
+                  <th> Empresa </th>
+                  <th> Direcci&oacute;n </th>
+                  <th> ¿Qu&eacute; hacemos? </th>
+                  <th> Contacto </th>
+                  <th> Telefono </th>
+                  <th> Vacantes </th>
+                  <th> Ver </th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+                  include 'php/conexion.php';
+                  $buscar = $_GET['busqueda'];
+
+                  $query = mysql_query('SELECT * FROM vacacantes');
+
+                      while($row=mysql_fetch_array($query)){
+                        
+                          echo '<tr>';
+                              echo '<td>'.$row['idEmpresa'].'</td>';
+                              echo '<td>'. $row['nombre'].'</td>';
+                              echo '<td>'.$row['direccion'].'</td>';
+                              echo '<td>'.$row['descripcion'].'</td>';
+                              echo '<td>'.$row['contacto'].'</td>';
+                              echo '<td>'.$row['telefono1'].'</td>';
+                              echo '<td>'.$row['vacantes'].'</td>';
+                              echo '<td>'; 
+                                  echo '<a href="PED_DIAG_EmpresasDetalles.php?idEmpresa='.$row['idEmpresa'].'"><button type="button" class="btn btn-primary"><i class="fa fa-plus fa-lg"></i>&nbsp;&nbsp;&nbsp;Detalles</button></a>';
+                                  echo '</br>';
+                                  echo '</br>';
+                                  echo '<a href="PED_DIAG_Login.php"><button type="button" class="btn btn-info"><i class="fa fa-external-link fa-lg"></i>&nbsp;&nbsp;&nbsp;Vincular</button></a>';
+                              echo '</td>';
+                          echo '</tr>'; 
+                        }
+                ?>                
+              </tbody>
+            </table>
+          </div>         
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Start Footer -->
   <footer class="site-footer">
     <div class="container">
@@ -166,7 +225,8 @@
     </div>
   </footer>
   <!-- End Footer --> 
-  <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a> </div>
+  <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+</div>
 <script src="js/jquery-2.0.0.min.js"></script> <!-- Jquery Library Call --> 
 <script src="plugins/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin --> 
 <script src="js/helper-plugins.js"></script> <!-- Plugins --> 
@@ -175,6 +235,6 @@
 <script src="plugins/mediaelement/mediaelement-and-player.min.js"></script> <!-- MediaElements --> 
 <script src="js/init.js"></script> <!-- All Scripts --> 
 <script src="plugins/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider --> 
-<script src="plugins/countdown/js/jquery.countdown.min.js"></script> <!-- Jquery Timer -->
+<script src="plugins/countdown/js/jquery.countdown.min.js"></script> <!-- Jquery Timer --> 
 </body>
 </html>

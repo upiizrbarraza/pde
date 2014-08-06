@@ -1,0 +1,1 @@
+[24-Jul-2014 10:21:28 America/Mexico_City] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/itdevelc/public_html/pde/php/conexion.php on line 7

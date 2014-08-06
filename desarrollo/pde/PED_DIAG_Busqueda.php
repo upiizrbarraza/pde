@@ -21,13 +21,15 @@
 <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css" media="screen" /><![endif]-->
 <!-- Color Style -->
 <link href="colors/color1.css" rel="stylesheet" type="text/css"> 
-<link href="css/custom.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css">   
 <!-- SCRIPTS
   ================================================== -->
 <script src="js/modernizr.js"></script><!-- Modernizr -->
+<script src="jquery/jquery.js"></script>
+<script src="js/busqueda.js"></script>
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="loginPDE-css">
 <!--[if lt IE 7]>
 	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 <![endif]-->
@@ -38,7 +40,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-6 col-xs-8">
-            <h1 class="logo"> <a href="PED_DIAG_Index.php.html"><img src="images/logo2.png" alt="Logo"></a> </h1>
+            <h1 class="logo"> <a href="index.html"><img src="images/logo2.png" alt="Logo"></a> </h1>
           </div>
           <div class="copyrights-col-right col-md-6 col-sm-6">
             <div class="social-icons"> <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a> <a href="http://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a> <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a> <a href="http://www.pinterest.com/" target="_blank"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-rss"></i></a> </div>
@@ -54,7 +56,15 @@
           <div class="col-md-12">
             <nav class="navigation">
               <ul class="sf-menu">
-                <li><a href="PED_DIAG_EmpresasIndex.php"><i class="fa fa-building fa-lg"></i>&nbsp;&nbsp;&nbsp;Empresas</a>
+               <li><a href="PED_DIAG_index.php"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Incio</a>
+                  <!--<ul class="dropdown">
+                    <li><a href="index.html">Home version 1</a></li>
+                    <li><a href="index1.html">Home version 2</a></li>
+                    <li><a href="index2.html">Home version 3</a></li>
+                    <li><a href="index3.html">Home version 4</a></li>
+                  </ul>-->
+                </li>
+               <li><a href="PED_DIAG_EmpresasIndex.php"><i class="fa fa-building fa-lg"></i>&nbsp;&nbsp;&nbsp;Empresas</a>
                   <!--<ul class="dropdown">
                     <li><a href="index.html">Home version 1</a></li>
                     <li><a href="index1.html">Home version 2</a></li>
@@ -69,7 +79,7 @@
                     <li><a href="our-staff.html">Our Staff</a></li>
                   </ul>-->
                 </li>                
-                <li><a href="PED_DIAG_ApoyosMunicipalesIndex.php"><i class="fa fa-users fa-lg"></i>&nbsp;&nbsp;&nbsp;Apoyos</a>
+                <li><a href="PED_DIAG_ApoyosMuinicipalesIndex.php"><i class="fa fa-users fa-lg"></i>&nbsp;&nbsp;&nbsp;Apoyos</a>
                   <!--<ul class="dropdown">
                     <li><a href="events.html">Events Listing</a></li>
                     <li><a href="events-timeline.html">Events Timeline</a></li>
@@ -80,8 +90,8 @@
                 </li>
                 <li><a href="#"><i class="fa fa-search fa-lg"></i>&nbsp;&nbsp;&nbsp;Busqueda</a>
                   <ul class="dropdown">
-                    <li><a href="PED_DIAG_BusquedaVacantes.php">Vacantes</a></li>
-                    <li><a href="PED_DIAG_BusquedaServicios.php">Servicios</a></li>
+                    <li><a href="sermons.html">Vacantes</a></li>
+                    <li><a href="single-sermon.html">Concepto</a></li>
                   </ul>
                 </li>
                 
@@ -94,36 +104,34 @@
     </div>
   </header>
   <!-- End Site Header --> 
+  
+ 
+  <!-- Start Content -->
+  <div class="main" role="main">
+    <div id="content" class="content full">
+      <div class="container">
+        <div class="row">          
+          <form action="#" type="post">
+          <!-- Start Colum 1 -->  
+            <div class="col-md-12"  align="center">     
 
-  <!-- Start Hero Slider -->
-  <div class="hero-slider flexslider clearfix" data-autoplay="yes" data-pagination="yes" data-arrows="yes" data-style="fade" data-pause="yes">
-    <ul class="slides">
-      <li class="parallax" style="background-image:url(http://www.conexion58.com/wp-content/uploads/2014/03/Familas-fresnillenses..jpg);"></li>
-      <li class=" parallax" style="background-image:url(http://www.conexion58.com/wp-content/uploads/2014/03/RENAVE..jpg);"></li>
-      <li class="parallax" style="background-image:url(http://www.conexion58.com/wp-content/uploads/2014/02/ecologia..jpg);"></li>
-    </ul>
-  </div>
-  <!-- End Hero Slider --> 
-  <!-- Start Notice Bar -->
-  <div class="notice-bar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-6 notice-bar-title"> <span class="notice-bar-title-icon hidden-xs"><i class="fa fa-calendar fa-3x"></i></span> <span class="title-note">Next</span> <strong>Upcoming Event</strong> </div>
-        <div class="col-md-3 col-sm-6 col-xs-6 notice-bar-event-title">
-          <h5><a href="single-event.html">Sountheast Asia Meet</a></h5>
-          <span class="meta-data">13th July, 2015</span> </div>
-        <div id="counter" class="col-md-4 col-sm-6 col-xs-12 counter" data-date="July 13, 2015">
-          <div class="timer-col"> <span id="days"></span> <span class="timer-type">days</span> </div>
-          <div class="timer-col"> <span id="hours"></span> <span class="timer-type">hrs</span> </div>
-          <div class="timer-col"> <span id="minutes"></span> <span class="timer-type">mins</span> </div>
-          <div class="timer-col"> <span id="seconds"></span> <span class="timer-type">secs</span> </div>
+              <div class="col-md-5 col-md-offset-3" align="center" style="color:#000000;">  
+                <h1 class="spaced">Busqueda</h1></br>
+
+                <label>T&eacute;rmino de b&uacute;squeda</label></br>
+                <input type="text" value="" maxlength="100" class="form-control" name="usr" id="usr" size="10" required></br>  
+                 <button type="button" class="btn btn-primary" id="vacante"><i class="fa fa-child fa-lg"></i>&nbsp;&nbsp;&nbsp;Buscar Vacante</button> </br></br>
+                </br>
+                <button type="button" class="btn btn-success" id="servicio"><i class="fa fa-suitcase fa-lg"></i>&nbsp;&nbsp;&nbsp;Buscar Servicio</button>   
+                </br>
+                </br>
+                </br>
+              </div>                    
+            </div>
+          </form>        
         </div>
-        <div class="col-md-2 col-sm-6 hidden-xs"> <a href="events.html" class="btn btn-primary btn-lg btn-block">All Events</a> </div>
       </div>
     </div>
-  </div>
-  <!-- End Notice Bar --> 
-  
   <!-- Start Footer -->
   <footer class="site-footer">
     <div class="container">
@@ -142,7 +150,7 @@
             <li><a href="#">Desarrollo Economico</a></li>
             <li><a href="#">Coordinación de Servicios</a></li>
             <li><a href="#">Reglamento del Servicio Profesional de Carrera del Municipio</a></li>
-            <li><a href="#">Agua Potable y alcantarillado</a></li>            
+            <li><a href="#">Agua Potable y alcantarillado</a></li>             
           </ul>
         </div>
         <div class="col-md-4 col-sm-4 widget footer-widget">
@@ -166,7 +174,8 @@
     </div>
   </footer>
   <!-- End Footer --> 
-  <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a> </div>
+  <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+</div>
 <script src="js/jquery-2.0.0.min.js"></script> <!-- Jquery Library Call --> 
 <script src="plugins/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin --> 
 <script src="js/helper-plugins.js"></script> <!-- Plugins --> 
@@ -175,6 +184,6 @@
 <script src="plugins/mediaelement/mediaelement-and-player.min.js"></script> <!-- MediaElements --> 
 <script src="js/init.js"></script> <!-- All Scripts --> 
 <script src="plugins/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider --> 
-<script src="plugins/countdown/js/jquery.countdown.min.js"></script> <!-- Jquery Timer -->
+<script src="plugins/countdown/js/jquery.countdown.min.js"></script> <!-- Jquery Timer --> 
 </body>
 </html>

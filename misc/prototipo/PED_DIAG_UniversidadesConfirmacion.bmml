@@ -1,0 +1,22 @@
+<mockup version="1.0" skin="sketch" measuredW="501" measuredH="315" mockupW="468" mockupH="282">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="33" y="33" w="468" h="282" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Registro%20correcto</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::TextArea" x="41" y="68" w="445" h="180" measuredW="200" measuredH="140" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>El%20registro%20de%20su%20universidad%20se%20ha%20realizado%20exitosamente%20y%20los%20datos%20fueron%20enviados%20al%20proceso%20de%20validaci%F3n.%0A%20%0AEn%20los%20pr%F3ximos%20d%EDas%20usted%20recibir%E1%20un%20correo%20indic%E1ndole%20si%20la%20solicitud%20de%20registro%20fue%20aceptada%20o%20rechazada.%0A%20%0ALe%20sugerimos%20estar%20atento%20a%20los%20medios%20de%20contacto%20provisto%20para%20su%20universidad%20en%20esta%20aplicaci%F3n.%0A%20%0ALa%20Presidencia%20de%20Fresnillo%20agradece%20su%20colaboraci%F3n.</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="232" y="255" w="-1" h="-1" measuredW="70" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>PED_DIAG_UniversidadesIndex%26bm%3BPED_DIAG_UniversidadesIndex.bmml%26bm%3BPED_DIAG_UniversidadesIndex.bmml%26bm%3BPED_DIAG_UniversidadesIndex.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22199%2C222%2C269%2C249%22%20href%3D%22PED_DIAG_UniversidadesIndex.bmml%22%20alt%3D%22PED_DIAG_UniversidadesIndex%22%20id%3D%223%22/%3E</map>
+        <text>Aceptar</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

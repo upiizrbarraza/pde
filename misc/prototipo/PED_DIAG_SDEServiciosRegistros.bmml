@@ -1,0 +1,125 @@
+<mockup version="1.0" skin="sketch" measuredW="756" measuredH="455" mockupW="750" mockupH="450">
+  <controls>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Image" x="23" y="403" w="717" h="37" measuredW="77" measuredH="79" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Imagen%20oficial%20del%20Gobierno%20Municipal</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Canvas" x="6" y="5" w="750" h="450" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::Canvas" x="23" y="20" w="717" h="73" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::Title" x="84" y="26" w="562" h="-1" measuredW="202" measuredH="28" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>PED_DIAG_Inicio%26bm%3BPED_DIAG_Inicio.bmml%26bm%3BPED_DIAG_Inicio.bmml%26bm%3BPED_DIAG_Inicio.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2278%2C21%2C640%2C49%22%20href%3D%22PED_DIAG_Inicio.bmml%22%20alt%3D%22PED_DIAG_Inicio%22%20id%3D%2222%22/%3E</map>
+        <size>20</size>
+        <text>Desarrollo%20empresarial</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::MultilineButton" x="218" y="54" w="139" h="31" measuredW="132" measuredH="55" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Universidades</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::MultilineButton" x="31" y="54" w="139" h="31" measuredW="103" measuredH="55" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Empresas</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::FieldSet" x="23" y="93" w="717" h="310" measuredW="200" measuredH="170" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Administraci%F3n%20del%20sitio</text>
+      </controlProperties>
+    </control>
+    <control controlID="85" controlTypeID="com.balsamiq.mockups::TabBar" x="31" y="111" w="701" h="285" measuredW="675" measuredH="100" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>2</selectedIndex>
+        <text>Validar%20empresas%2C%20Validar%20universidades%2C%20Admin.%20servicios%2C%20Admin.%20usuarios%2C%20Admin.%20avisos%2C%20Configuraci%F3n</text>
+      </controlProperties>
+    </control>
+    <control controlID="90" controlTypeID="com.balsamiq.mockups::DataGrid" x="47" y="160" w="669" h="185" measuredW="321" measuredH="97" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <alternateRowColor>15134199</alternateRowColor>
+        <borderStyle>none</borderStyle>
+        <hasHeader>true</hasHeader>
+        <hLines>false</hLines>
+        <rowHeight>24</rowHeight>
+        <selectedIndex>-1</selectedIndex>
+        <text>Nombre%2C%20Correo%0AAntonio%20P%E9rez%20Mendoza%2C%20aperez@yahoo.com.mx%0ACarolina%20Galaviz%20Fraire%2C%20galaviz3@gmail.com%0ABeatriz%20G%F3mez%20Videgaray%2C%20bgv@hotmail.com</text>
+        <verticalScrollbar>false</verticalScrollbar>
+        <vLines>true</vLines>
+      </controlProperties>
+    </control>
+    <control controlID="96" controlTypeID="com.balsamiq.mockups::Button" x="635" y="352" w="-1" h="-1" measuredW="78" measuredH="27" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>PED_DIAG_SDEIndexServicios%26bm%3BPED_DIAG_SDEIndexServicios.bmml%26bm%3BPED_DIAG_SDEIndexServicios.bmml%26bm%3BPED_DIAG_SDEIndexServicios.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22629%2C347%2C707%2C374%22%20href%3D%22PED_DIAG_SDEIndexServicios.bmml%22%20alt%3D%22PED_DIAG_SDEIndexServicios%22%20id%3D%2296%22/%3E</map>
+        <text>Regresar</text>
+      </controlProperties>
+    </control>
+    <control controlID="97" controlTypeID="com.balsamiq.mockups::Image" x="27" y="25" w="53" h="30" measuredW="77" measuredH="79" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../../../../../Ir%2520a%2520%255BUPIIZ%255D/%255BCDS%255D/%255BProyectos%255D/PortalDesarrolloEmpresarial/Prototipo/assets/logo2.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="98" controlTypeID="com.balsamiq.mockups::Image" x="683" y="25" w="53" h="30" measuredW="77" measuredH="79" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../../../../../Ir%2520a%2520%255BUPIIZ%255D/%255BCDS%255D/%255BProyectos%255D/PortalDesarrolloEmpresarial/Prototipo/assets/logo2.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="99" controlTypeID="com.balsamiq.mockups::MultilineButton" x="407" y="54" w="139" h="31" measuredW="151" measuredH="53" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>14</size>
+        <text>Apoyos%20municipales</text>
+      </controlProperties>
+    </control>
+    <control controlID="102" controlTypeID="com.balsamiq.mockups::FieldSet" x="36" y="141" w="690" h="247" measuredW="200" measuredH="170" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Usuarios%20registrados%20para%20el%20servicio%3A%20Taller%20de%20administraci%F3n%20b%E1sica</text>
+      </controlProperties>
+    </control>
+    <control controlID="103" controlTypeID="com.balsamiq.mockups::Icon" x="697" y="185" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledXIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="104" controlTypeID="com.balsamiq.mockups::Icon" x="697" y="209" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledXIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="105" controlTypeID="com.balsamiq.mockups::Icon" x="697" y="233" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledXIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="106" controlTypeID="com.balsamiq.mockups::Button" x="47" y="352" w="-1" h="-1" measuredW="164" measuredH="27" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Enviar%20comunicado%20global</text>
+      </controlProperties>
+    </control>
+    <control controlID="107" controlTypeID="com.balsamiq.mockups::Icon" x="677" y="185" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>EmailIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="108" controlTypeID="com.balsamiq.mockups::Icon" x="677" y="209" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>EmailIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="109" controlTypeID="com.balsamiq.mockups::Icon" x="677" y="233" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>EmailIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="110" controlTypeID="com.balsamiq.mockups::MultilineButton" x="594" y="54" w="139" h="31" measuredW="99" measuredH="55" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Buscador</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -24,9 +24,7 @@
 <link href="css/custom.css" rel="stylesheet" type="text/css"> 
 <!-- SCRIPTS
   ================================================== -->
-<script type="text/javascript" src="jquery/jquery.js"></script>
 <script src="js/modernizr.js"></script><!-- Modernizr -->
-<script type="text/javascript" src="js/altaApoyo.js"></script>
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
@@ -88,7 +86,7 @@
                     <li><a href="single-event.html">Single Event</a></li>
                   </ul>-->
                 </li>
-                <li><a href="#"><i class="fa fa-search fa-lg"></i>&nbsp;&nbsp;&nbsp;Busqueda</a>
+                <li><a href="PED_DIAG_Busqueda.php"><i class="fa fa-search fa-lg"></i>&nbsp;&nbsp;&nbsp;Busqueda</a>
                   <ul class="dropdown">
                     <li><a href="sermons.html">Vacantes</a></li>
                     <li><a href="single-sermon.html">Concepto</a></li>
@@ -111,7 +109,7 @@
         <div class="col-md-12">
           <ol class="breadcrumb">
             <li><a href="index.html">Index</a></li>
-            <li class="active">Apoyos</li>
+            <li class="active">Busqueda</li>
           </ol>
         </div>
       </div>
@@ -123,7 +121,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-           <p class="drop-caps secondary">A</br></br><h1>poyos Municipales</h1></p>
+          <p class="drop-caps secondary">B</br></br><h1>usaqueda de "palabra buscada"</h1></p>
+          
         </div>
       </div>
     </div>
@@ -135,57 +134,130 @@
       <div class="container">
         <div class="row">
           <!-- Start Colum 1 -->
-          <form action="" type="post">
-            <div class="col-md-12" style="text-align:center" align="center">
-              <h4 class="spaced">Alta para apoyos</h4></br>              
-            </div>
-            <div class="col-md-8 col-md-offset-2" align="rights">  
+          <div class="col-md-12"  align="center" style="overflow-y:scroll;height:400px">        
 
-              <label>Provedor*</label>
-              <textarea  rows="3" class="form-control" name="vacantes" id="proveedor" style="resize:none;overflow:auto;" ></textarea>
+          </br> 
+          <h4 class="spaced">Empresas</h4>
+          <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th> ID </th>
+                  <th> Empresa </th>
+                  <th> Direcci&oacute;n </th>
+                  <th> ¿Qu&eacute; hacemos? </th>
+                  <th> Contacto </th>
+                  <th> Telefono </th>                  
+                  <th> Ver </th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+                  include 'php/conexion.php';
+                  $buscar = $_GET['busqueda'];
 
-              <label>Objetivo*</label>
-              <textarea  rows="3" class="form-control" name="descripcion" id="objetivo" style="resize:none;overflow:auto;" ></textarea>
+                  $query = mysql_query('SELECT * FROM empresas WHERE descripcion LIKE "%'.$buscar.'%"');
 
-              <label>Cargar Convocatoria</label>
-              <input type="file" id="convocatoria" name="convocatoria"></br>
-               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye fa-lg"></i>&nbsp;&nbsp;&nbsp;Ver</button>             
-                          
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                      <h4 class="modal-title" id="myModalLabel">Nombre Convocatoria</h4>
-                    </div>
-                    <div class="modal-body">Contenido</div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default inverted" data-dismiss="modal">Salir</button>                    
-                    </div>
-                  </div>
-                </div>
-              </div></br></br></br>
+                      while($row=mysql_fetch_array($query)){
+                          echo '<tr>';
+                              echo '<td>'.$row['idEmpresa'].'</td>';
+                              echo '<td>'. $row['nombre'].'</td>';
+                              echo '<td>'.$row['direccion'].'</td>';
+                              echo '<td>'.$row['descripcion'].'</td>';
+                              echo '<td>'.$row['contacto'].'</td>';
+                              echo '<td>'.$row['telefono1'].'</td>';
+                              echo '<td>'; 
+                                  echo '<a href="PED_DIAG_EmpresasDetalles.php?idEmpresa='.$row['idEmpresa'].'"><button type="button" class="btn btn-primary"><i class="fa fa-plus fa-lg"></i>&nbsp;&nbsp;&nbsp;Detalles</button></a>';
+                                  echo '</br>';
+                                  echo '</br>';
+                                  echo '<a href="PED_DIAG_Login.php"><button type="button" class="btn btn-info"><i class="fa fa-external-link fa-lg"></i>&nbsp;&nbsp;&nbsp;Vincular</button></a>';
+                              echo '</td>';
+                          echo '</tr>'; 
+                        }
+                ?>       
+              </tbody>
+            </table>
 
-              <label>Estatus</label></br>
-              <select required  id="status">
-                <option value="default" id="-1">Elige tu opci&oacute;n </option>
-                <option value="0" id="cero">0</option>
-                <option value="1" id="uno">1</option>                
-              </select></br></br></br>
+          </div>
 
-              <label>Departamento*</label>
-              <input type="text" value="" maxlength="100" class="form-control" name="num_empleados" id="departamento" >             
-              
-            </div> 
-         
-            <div class="col-md-12" align="center" style="text-align:center">
-              </br>
-              </br>
-              <button type="button" class="btn btn-danger"><i class="fa fa-times fa-lg"></i>&nbsp;&nbsp;&nbsp;Elimianr apoyo</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="PED_DIAG_ApoyosMuinicipalesIndex.php"><button type="button" class="btn btn-warning"><i class="fa fa-reply fa-lg"></i>&nbsp;&nbsp;&nbsp;Regresar</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              
-              <button type="button" class="btn btn-success" id="guardar"><i class="fa fa-floppy-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Guardar</button>   
-            </div>
-          </form>          
+          <div class="col-md-12"  align="center" style="overflow-y:scroll;height:400px">        
+
+          </br> 
+          <h4 class="spaced">Universidades</h4>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th> ID </th>
+                  <th> Universidad </th>
+                  <th> Direcci&oacute;n </th>
+                  <th> Carreras </th>
+                  <th> Contacto </th>
+                  <th> Telefono </th>
+                  <th> Ver </th>
+                </tr>
+              </thead>
+              <tbody>
+                 <?php
+                  include 'php/conexion.php';
+                  $buscar = $_GET['busqueda'];
+
+                  $query = mysql_query('SELECT * FROM universidades WHERE nombre LIKE "%'.$buscar.'%"');
+
+                      while($row=mysql_fetch_array($query)){
+
+                        $uni = mysql_query("SELECT * FROM carreras WHERE Universidades_idUniversidad =".$row['idUniversidad']);
+
+                        while($rowUni=mysql_fetch_array($uni)){
+                            echo '<tr>';
+                              echo '<td>'.$row['idUniversidad'].'</td>';
+                              echo '<td>'. $row['nombre'].'</td>';
+                              echo '<td>'.$row['direccion'].'</td>';
+                              echo '<td>'.$rowUni['nombre'].'</td>';
+                              echo '<td>'.$row['contacto'].'</td>';
+                              echo '<td>'.$row['telefono1'].'</td>';
+                              echo '<td>'; 
+                                  echo '<a href="PED_DIAG_EmpresasDetalles.php?idEmpresa='.$row['idUniversidad'].'"><button type="button" class="btn btn-primary"><i class="fa fa-plus fa-lg"></i>&nbsp;&nbsp;&nbsp;Detalles</button></a>';
+                                  echo '</br>';
+                                  echo '</br>';
+                                  echo '<a href="PED_DIAG_Login.php"><button type="button" class="btn btn-info"><i class="fa fa-external-link fa-lg"></i>&nbsp;&nbsp;&nbsp;Vincular</button></a>';
+                              echo '</td>';
+                          echo '</tr>';
+                        } 
+                        }
+                ?>                    
+              </tbody>
+            </table>
+
+          </div>
+           </br>
+            </br>
+          <div class="col-md-12"  align="center" style="overflow-y:scroll;height:400px">        
+
+          </br> 
+          <h4 class="spaced">Servicios</h4>
+          <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th> Servicio </th>
+                  <th> Proveedor </th>
+                  <th> Objetivo </th>
+                  <th> Ver </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> 1 </td>
+                  <td> Mark </td>
+                  <td> Otto </td>                  
+                  <td> 
+                    <a href="PED_DIAG_ApoyosMunicipalesDetalles.php"><button type="button" class="btn btn-primary"><i class="fa fa-plus fa-lg"></i>&nbsp;&nbsp;&nbsp;Detalles</button></a>
+                    </br>                                        
+                  </td>
+                </tr>                 
+              </tbody>
+            </table>
+
+          </div>        
+
         </div>
       </div>
     </div>
