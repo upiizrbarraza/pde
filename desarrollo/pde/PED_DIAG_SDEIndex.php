@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html class="no-js">
 <head>
@@ -86,14 +87,13 @@
                     <li><a href="single-event.html">Single Event</a></li>
                   </ul>-->
                 </li>
-                <li><a href="#"><i class="fa fa-search fa-lg"></i>&nbsp;&nbsp;&nbsp;Busqueda</a>
-                  <ul class="dropdown">
-                    <li><a href="sermons.html">Vacantes</a></li>
-                    <li><a href="single-sermon.html">Concepto</a></li>
-                  </ul>
+                <li><a href="PED_DIAG_BusquedaVacantes.php"><i class="fa fa-suitcase fa-lg"></i>&nbsp;&nbsp;Buscar Empleo</a>
+                  
                 </li>
+                <li><a href="PED_DIAG_BusquedaServicios.php"><i class="fa fa-search fa-lg"></i>&nbsp;&nbsp;Buscar Servicio</a>
+                  
+                </li>               
                 
-                <li><a href="PED_DIAG_Contacto.php"><i class="fa fa-envelope fa-lg"></i>&nbsp;&nbsp;&nbsp;Contactanos</a></li>
               </ul>
             </nav>
           </div>
@@ -148,8 +148,9 @@
               <li class="active"> <a data-toggle="tab" href="#sampletab1"> Validar Empresas </a> </li>
               <li> <a data-toggle="tab" href="#sampletab2"> Validar Universidades </a> </li>
               <li> <a data-toggle="tab" href="#sampletab3">Administrar Servicios </a> </li>
-               <li> <a data-toggle="tab" href="#sampletab4"> Administrar Usuarios </a> </li>
+              <li> <a data-toggle="tab" href="#sampletab4"> Administrar Usuarios </a> </li>
               <li> <a data-toggle="tab" href="#sampletab5"> Administrar Banners </a> </li>
+              <li> <a data-toggle="tab" href="#sampletab6"> Configuración </a> </li>
             </ul>
             <div class="tab-content">
               <div id="sampletab1" class="tab-pane active" style="overflow-y:scroll;height:400px">
@@ -244,6 +245,9 @@
                     </tr>                 
                   </tbody>
                 </table>
+                </br>
+                </br>
+                <button type="button" class="btn btn-success"><i class="fa fa-plus fa-lg"></i>&nbsp;&nbsp;&nbsp;Agregar</button>
 
               </div>
               <!-- Tab 4 -->
@@ -279,8 +283,16 @@
                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                           <h4 class="modal-title" id="myModalLabel">Registro de usuario</h4>
                         </div>
-                        <div class="modal-body">Contenido
+                        <div class="modal-body">
 
+                          <label>Tipo*</label>
+                          <input type="text" value="" maxlength="100" class="form-control" name="tipo" id="tipo">
+            
+                          <label>Nombre*</label>
+                          <input type="text" value="" maxlength="100" class="form-control" name="nombre" id="nombre">
+
+                          <label>Departamento*</label>
+                          <input type="text" value="" maxlength="100" class="form-control" name="depa" id="depa">
 
                         </div>
                         <div class="modal-footer">
@@ -299,9 +311,9 @@
                   <thead>
                     <tr>
                       <th> Nombre </th>
-                      <th> Pagina </th>                        
+                      <th> Link </th>                        
                       <th> Descripci&oacute;n </th>
-                      <th> Archivo </th>                                               
+                      <th> Imagen </th>                                               
                     </tr>
                   </thead>
                   <tbody>
@@ -312,7 +324,29 @@
                       <td><input type="file" id="banner" name="banner" ></br></td>                       
                     </tr>                 
                   </tbody>
-                </table>               
+                </table>
+                <button type="button" class="btn btn-success"><i class="fa fa-plus fa-lg"></i>&nbsp;&nbsp;&nbsp;Agregar</button>               
+              </div>
+
+              <div id="sampletab6" class="tab-pane" style="overflow-y:scroll;height:400px">
+                
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th> ID </th>
+                      <th> Nombre </th>
+                      <th> Correo </th>                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> 1 </td>
+                      <td> Mark </td>
+                      <td> Otto </td>                      
+                    </tr>                 
+                  </tbody>
+                </table>
+
               </div>
 
             </div>
