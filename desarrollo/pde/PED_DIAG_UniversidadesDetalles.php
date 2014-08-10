@@ -152,12 +152,13 @@
 
                
                    $carreras= "";
+                   $enter = "\n";
                    
                    $consulta_carreras = "SELECT * FROM carreras WHERE Universidades_idUniversidad = $Universidad";
                    $resultado_carreras = mysql_query($consulta_carreras);
 
               while($registro_carreras = mysql_fetch_array($resultado_carreras)){
-                   $carreras = $carreras.$registro_carreras['nombre'].", ";
+                   $carreras = $carreras.$registro_carreras['nombre'].$enter;
 
                     }
               

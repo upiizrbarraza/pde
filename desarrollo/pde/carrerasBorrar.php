@@ -1,9 +1,9 @@
 <?php
 include 'php/conexion.php';
 
-$nombre = $_POST['nom'];
+$id = $_POST['id'];
  
-$borrar = "DELETE FROM carreras WHERE nombre = '".$nombre."'";
+$borrar = "DELETE FROM carreras WHERE idCarrera = '".$id."'";
 
  
 mysql_query($borrar);

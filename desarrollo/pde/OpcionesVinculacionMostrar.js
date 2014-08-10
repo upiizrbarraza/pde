@@ -32,7 +32,7 @@ function Borrar(x){
 }
 
 function Actualiza(y){
-
+    var vacio = '';
 	var id = $('#uni').val();
 	var valor_caja = $('#cantidad').val();
 	var vide = y;
@@ -46,5 +46,7 @@ function Actualiza(y){
 		}).done(function(msg3){
 			$('#mostraraqui').html(msg3).fadeOut(1000).fadeIn(3000);
 		});
+
+		$('#cantidad').val(vacio);
 
 }

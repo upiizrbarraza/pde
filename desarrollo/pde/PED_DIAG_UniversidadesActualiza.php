@@ -152,45 +152,59 @@
               $consulta = "SELECT * FROM universidades WHERE idUniversidad= '".$id."'";
               $valor = mysql_query($consulta);
               while($registro = mysql_fetch_array($valor)){
+
+              echo"<input type='hidden' id='nombre_uni' value='".$registro['nombre']."'/>";
+              echo"<input type='hidden' id='direccion_uni' value='".$registro['direccion']."'/>";
+              echo"<input type='hidden' id='telefono1_uni' value='".$registro['telefono1']."'/>";
+              echo"<input type='hidden' id='telefono2_uni' value='".$registro['telefono2']."'/>";
+              echo"<input type='hidden' id='correo_uni' value='".$registro['correo']."'/>";
+              echo"<input type='hidden' id='como_uni' value='".$registro['comoLlegar']."'/>";
+              echo"<input type='hidden' id='sitio_uni' value='".$registro['sitioWeb']."'/>";
+              echo"<input type='hidden' id='contacto_uni' value='".$registro['contacto']."'/>";
+              echo"<input type='hidden' id='mision_uni' value='".$registro['mision']."'/>";
+              echo"<input type='hidden' id='vision_uni' value='".$registro['vision']."'/>";
+              echo"<input type='hidden' id='servicio_uni' value='".$registro['servicioMyV']."'/>";
+              echo"<input type='hidden' id='logo_uni' value='".$registro['logotipo']."'/>";
               echo "<label>Nombre*</label>";
-              echo "<input type='text' placeholder='".$registro['nombre']."' maxlength='100' class='form-control' name='nombre_universidad' id='nombre_universidad'>";
-            
+              echo "<input type='text' maxlength='100' class='form-control' name='nombre_universidad' id='nombre_universidad'>";
+             
+
               echo '<label>Dirección*</label>';
-              echo "<input type='text' maxlength='100' placeholder='".$registro['direccion']."' class='form-control' name='direccion_universidad' id='direccion_universidad'>";
+              echo "<input type='text' maxlength='100' class='form-control' name='direccion_universidad' id='direccion_universidad'>";
 
               echo "<label>Telefonos*</label>";
-              echo "<input type='text' value='' placeholder='".$registro['telefono1']."' maxlength='100' class='form-control' name='telefono1_universidad' id='telefono1_universidad'>";
+              echo "<input type='text' maxlength='100' class='form-control' name='telefono1_universidad' id='telefono1_universidad'>";
 
-              echo "<input type='text' value='' placeholder='".$registro['telefono2']."' maxlength='100' class='form-control' name='telefono2_universidad' id='telefono2_universidad'>";
+              echo "<input type='text' maxlength='100' class='form-control' name='telefono2_universidad' id='telefono2_universidad'>";
 
         
 
               echo "<label>Correo*</label>";
-              echo "<input type='email' value='' placeholder='".$registro['correo']."' maxlength='100' class='form-control' name='correo_universidad' id='correo_universidad'>";
+              echo "<input type='email' maxlength='100' class='form-control' name='correo_universidad' id='correo_universidad'>";
 
               echo "<label>Cómo llegar*</label>";
-              echo "<textarea  rows='3' class='form-control' placeholder='".$registro['comoLlegar']."' name='c_llegar' id='c_llegar' style='resize:none;overflow:auto;'></textarea>";  
+              echo "<textarea  rows='3' class='form-control'  name='c_llegar' id='c_llegar' style='resize:none;overflow:auto;'></textarea>";  
 
               echo "<label>Sito Web</label>";
-              echo "<input type='text' value='' maxlength='100' placeholder='".$registro['sitioWeb']."' class='form-control' name='web_universidad' id='web_universidad'>";
+              echo "<input type='text' value='' maxlength='100' class='form-control' name='web_universidad' id='web_universidad'>";
               
             echo "</div>"; 
           
             echo '<div class="col-md-6" align="rights">'; 
 
               echo "<label>Contacto*</label>";
-              echo "<input type='text' value='' placeholder='".$registro['contacto']."' maxlength='100' class='form-control name='num_empleados' id='num_empleados'>";       
+              echo "<input type='text'  maxlength='100' class='form-control name='num_empleados' id='num_empleados'>";       
 
              echo " <label>Visi&oacute;n*</label>";
-              echo "<textarea  rows='3' class='form-control' placeholder='".$registro['vision']."' name='vision' id='vision' style='resize:none;overflow:auto;''></textarea>";
+              echo "<textarea  rows='3' class='form-control'  name='vision' id='vision' style='resize:none;overflow:auto;''></textarea>";
 
               echo "<label>Misi&oacute;n*</label>";
-              echo "<textarea  rows='3' class='form-control' placeholder='".$registro['mision']."' name='mision' id='mision' style='resize:none;overflow:auto;''></textarea>";
+              echo "<textarea  rows='3' class='form-control'  name='mision' id='mision' style='resize:none;overflow:auto;''></textarea>";
 
               echo "</br>";
               
               echo 'Provee el servicio "Generación de misión y visión"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-              echo "<input type='radio' id='ant1' placeholder='".$registro['servicioMyV']."' value='1'>";
+              echo "<input type='checkbox' id='ant1' value='1'>";
               echo "</br>";
               echo "</br>";
 }
@@ -229,7 +243,7 @@
                       <h4 class="modal-title" id="myModalLabel">Registro Correcto</h4>
                     </div>
                     <div class="modal-body">
-                      <p>El registro de su empresa se ha realizado exitosamente y los datos fueron enviados al proceso de validación.</p>
+                      <p>El registro de su universidad se ha realizado exitosamente y los datos fueron enviados al proceso de validación.</p>
                       <p>En los próximos días usted recibirá un correo indicándole si la solicitud de registro fue aceptada o rechazada. 
                       Le sugerimos estar atento a los medios de contacto provisto para su universidad en esta aplicación. 
                       La Presidencia de Fresnillo agradece su colaboración.</p>

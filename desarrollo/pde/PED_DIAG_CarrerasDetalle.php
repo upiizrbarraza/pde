@@ -32,34 +32,7 @@
 	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 <![endif]-->
 
-<?php 
-             include 'php/conexion.php';
 
-              $Universidad = $_GET['idUniversidad'];
-              $consulta ="SELECT * FROM carreras WHERE Universidades_idUniversidad ='".$Universidad."'"; 
-              $respuesta =mysql_query($consulta); 
-              $nombre="";
-              $objetivo="";
-              $egreso="";
-              $ingreso="";
-              $campo="";
-              $alumnos="";
-              
-
-              while ($registro=mysql_fetch_array($respuesta)){
-                
-                $nombre = $nombre." * ".$registro['nombre'];
-                $objetivo = $objetivo." * ".$registro['objetivo'];
-                $ingreso = $ingreso." * ".$registro['perfilIngreso'];
-                $egreso = $egreso." * ".$registro['perfilEgreso'];
-                $campo = $campo." * ".$registro['campo'];
-                $alumnos = $alumnos." * ".$registro['alumnosDisponibles'];
-               
-              }
-
-              
-              
-  ?>
 <div class="body"> 
   <!-- Start Site Header -->
   <header class="site-header">
@@ -163,29 +136,51 @@
         <div class="row" >
           <!-- Start Colum 1 -->
           <form action="" type="post">
-            <div class="col-md-12" style="text-align:center">
-              <h4 class="spaced">Carrera de "Nombre de la Carrera"</h4>   
-            </div>
-            <div class="col-md-8 col-md-offset-2" align="center">  
 
-              <label>Nombre*</label>
-              <input type="text" value="<?php echo $nombre?>" maxlength="100" class="form-control" name="nombre_universidad" id="nombre_universidad" disabled>
-            <?php
+            <?php 
+             include 'php/conexion.php';
+
+              $Universidad = $_GET['idUniversidad'];
+              $consulta ="SELECT * FROM carreras WHERE Universidades_idUniversidad ='".$Universidad."'"; 
+              $respuesta =mysql_query($consulta); 
+             
+              
+              $consulta_nombre = "SELECT * FROM universidades WHERE idUniversidad = '".$Universidad."'";
+              $respuesta_nombre = mysql_query($consulta_nombre);
+              while ($registro_nombre=mysql_fetch_array($respuesta_nombre)) {
+                $nombre_uni = $registro_nombre['nombre'];
+              }
+
+              echo '<div class="col-md-12" style="text-align:center">';
+              echo "<h4 class='spaced'>Carreras de ".$nombre_uni." </h4>"; 
+              echo '</div>';
+              echo '<div class="col-md-8 col-md-offset-2" align="center">';
+              while ($registro=mysql_fetch_array($respuesta)){
+                    
+              echo "<label>Nombre*</label>";
+              echo "<input type='text' value='".$registro['nombre']."' maxlength='100' class='form-control' name='nombre_universidad' id='nombre_universidad' disabled>";
+            
               echo '<label>Objetivo*</label>';
-              echo '<textarea  rows="3" class="form-control" name="vision" id="vision" style="resize:none;overflow:auto;" disabled>'.$objetivo.'</textarea>';
+              echo '<textarea  rows="3" class="form-control" name="vision" id="vision" style="resize:none;overflow:auto;" disabled>'.$registro['objetivo'].'</textarea>';
 
               echo '<label>Perfil de ingreso*</label>';
-              echo '<textarea  rows="3" class="form-control" name="vision" id="vision" style="resize:none;overflow:auto;" disabled>'.$ingreso.'</textarea>';
+              echo '<textarea  rows="3" class="form-control" name="vision" id="vision" style="resize:none;overflow:auto;" disabled>'.$registro['perfilIngreso'].'</textarea>';
 
               echo '<label>Perfil de egreso*</label>';
-              echo '<textarea  rows="3" class="form-control" name="vision" id="vision" style="resize:none;overflow:auto;" disabled>'.$egreso.'</textarea>';
+              echo '<textarea  rows="3" class="form-control" name="vision" id="vision" style="resize:none;overflow:auto;" disabled>'.$registro['perfilEgreso'].'</textarea>';
               
               echo ' <label>Campo cocupacional*</label>';
-              echo '<textarea  rows="3" class="form-control" name="vision" id="vision" style="resize:none;overflow:auto;" disabled>'.$campo.'</textarea>';
-             ?>
-              <label>Alumnos disponibles*</label>
-              <input type="text" maxlength="100" value="<?php echo $alumnos?>" class="form-control" name="num_empleados" id="num_empleados" disabled>              
-              
+              echo '<textarea  rows="3" class="form-control" name="vision" id="vision" style="resize:none;overflow:auto;" disabled>'.$registro['campo'].'</textarea>';
+             
+              echo "<label>Alumnos disponibles*</label>";
+              echo "<input type='text' maxlength='100' value='".$registro['alumnosDisponibles']."' class='form-control' name='num_empleados' id='num_empleados' disabled>";          
+              echo "<br />";
+              echo "<br />";
+              echo "<hr  width='100%'/>";
+              echo "<br />";
+              echo "<br />";
+              }
+              ?>
            </div>         
 
             <div class="col-md-12" align="center" style="text-align:center">

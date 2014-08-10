@@ -27,39 +27,10 @@
 <script src="js/modernizr.js"></script><!-- Modernizr -->
 <script type="text/javascript" src="jquery\jquery.js"></script>
 <script type="text/javascript" src="CarrerasActualizar.js"></script>
+
 </head>
 <body>
-<?php
-               include 'php/conexion.php';
 
- 
-               $Universidad = $_GET['idUniversidad'];
-                echo '<input type="hidden" id="n" name="usuario" value="'.$Universidad.'">';
-               //echo '<input type="hidden" id="n" name="usuario" value="'. $_POST['nombre_universidad'].'">';
-               //$uni = $_POST['nombre_universidad'];
-               $consulta ="SELECT * FROM carreras WHERE Universidades_idUniversidad ='".$Universidad."'"; 
-              $respuesta =mysql_query($consulta); 
-              $nombre="";
-              $objetivo="";
-              $egreso="";
-              $ingreso="";
-              $campo="";
-              $alumnos="";
-              
-
-              while ($registro=mysql_fetch_array($respuesta)){
-                
-                $nombre = $nombre." * ".$registro['nombre'];
-                $objetivo = $objetivo." * ".$registro['objetivo'];
-                $ingreso = $ingreso." * ".$registro['perfilIngreso'];
-                $egreso = $egreso." * ".$registro['perfilEgreso'];
-                $campo = $campo." * ".$registro['campo'];
-                $alumnos = $alumnos." * ".$registro['alumnosDisponibles'];
-
-               
-              }
-             
-?>
 
 <!--[if lt IE 7]>
 	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
@@ -168,46 +139,76 @@
           <!-- Start Colum 1 -->
           <form>
             <div class="col-md-12" style="text-align:center">
-              <h4 class="spaced">Registro de Carrera</h4>   
+              <h4 class="spaced">Actualización de Carrera</h4>   
             </div>
             <div class="col-md-8 col-md-offset-2" align="center">  
               <?php
 
+
+               include 'php/conexion.php';
+
+ 
+               $Universidad = $_GET['idUniversidad'];
+                echo '<input type="hidden" id="n" name="usuario" value="'.$Universidad.'">';
+               //echo '<input type="hidden" id="n" name="usuario" value="'. $_POST['nombre_universidad'].'">';
+               //$uni = $_POST['nombre_universidad'];
+               $consulta ="SELECT * FROM carreras WHERE Universidades_idUniversidad ='".$Universidad."'"; 
+              $respuesta =mysql_query($consulta); 
+              
+
+              while ($registro=mysql_fetch_array($respuesta)){
+              
+             
+
+
               echo "<label>Nombre*</label>";
-              echo "<input type='text' value='' placeholder='".$nombre."' maxlength='100' class='form-control' name='nombre_universidad' id='nombre_universidad'>";
+              echo '<input type="text" maxlength="100" value="'.$registro['nombre'].'" class="form-control" name="nombre_universidad" id="nombre_universidad'.$registro['idCarrera'].'">';
             
               echo "<label>Objetivo*</label>";
-              echo "<textarea  rows='3' class='form-control' placeholder='".$objetivo."' name='vision' id='objetivo' style='resize:none;overflow:auto;'></textarea>";
+              echo '<textarea  rows="3" class="form-control" name="vision" id="objetivo'.$registro['idCarrera'].'" style="resize:none;overflow:auto;">'.$registro['objetivo'].'</textarea>';
 
               echo "<label>Perfil de ingreso*</label>";
-              echo "<textarea  rows='3' placeholder='".$ingreso."' class='form-control' name='vision' id='ingreso' style='resize:none;overflow:auto;'></textarea>";
+              echo '<textarea  rows="3"  class="form-control" name="vision" id="ingreso'.$registro['idCarrera'].'" style="resize:none;overflow:auto;">'.$registro['perfilIngreso'].'</textarea>';
 
               echo "<label>Perfil de egreso*</label>";
-              echo "<textarea  rows='3' placeholder='".$egreso."' class='form-control' name='vision' id='egreso' style='resize:none;overflow:auto;'></textarea>";
+              echo '<textarea  rows="3"  class="form-control" name="vision" id="egreso'.$registro['idCarrera'].'" style="resize:none;overflow:auto;">'.$registro['perfilEgreso'].'</textarea>';
               
-              echo "<label>Campo cocupacional*</label>";
-              echo "<textarea  rows='3' placeholder='".$campo."' class='form-control' name='vision' id='campo' style='resize:none;overflow:auto;'></textarea>";
+              echo "<label>Campo ocupacional*</label>";
+              echo '<textarea  rows="3"  class="form-control" name="vision" id="campo'.$registro['idCarrera'].'" style="resize:none;overflow:auto;">'.$registro['campo'].'</textarea>';
 
               echo "<label>Alumnos disponibles*</label>";
-              echo "<input type='text' placeholder='".$alumnos."' value='' maxlength='100' class='form-control' name='alumnos' id='num_empleados'>";              
-              ?>
-            </div>
-            <div class="col-md-2" align="center">  
-            </br></br></br>  
+             
+
+             echo '<input type="text" value="'.$registro['alumnosDisponibles'].'" maxlength="100" class="form-control" name="alumnos" id="num_empleados'.$registro['idCarrera'].'">';  
             
-                     
+
+
+
+              echo '<div class="col-md-12" align="center" style="text-align:center">';
+              echo '</br>';
+              echo '</br>';
+               $orden = $registro['idCarrera'];
+              echo '<button id ="borra" type="button" onClick="Borrar('.$orden.')" class="btn btn-warning">Eliminar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ';             
+             
+              echo '<input type="button" onClick="Actualiza('.$orden.')" id ="Guardar" value="Actualizar" class="btn btn-primary" data-loading-text="Loading...">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ';             
+              echo '<button type="button" class="btn btn-danger" onClick="history.back()">Regresar</button>';  
+            echo '</div>';
+             echo "<br />";
+              echo "<br />";
               
-            </div>
+              echo "<br />";
+              echo "<br />";
+              echo "<br />";
+              echo "<br />";
+              
+              echo "<br />";
+              echo "<br />";
+               echo "<hr  width='100%'/>";
+              
+              }            
+              ?>
 
-            
-
-            <div class="col-md-12" align="center" style="text-align:center">
-              </br>
-              </br>
-              <button id ="borra" type="button" class="btn btn-warning">Eliminar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              
-              <input type="button" id ="Guardar" value="Guardar" class="btn btn-primary" data-loading-text="Loading...">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              
-              <a href="PED_DIAG_UniversidadesAlta.php"><button type="button" class="btn btn-danger">Regresar</button></a>   
-            </div>
+          
           </form>          
         </div>
       </div>

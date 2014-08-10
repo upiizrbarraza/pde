@@ -156,7 +156,7 @@ echo '<input type="hidden" id="n" name="usuario" value="'. $_POST['nombre_univer
               <label>Perfil de egreso*</label>
               <textarea  rows="3" class="form-control" name="vision" id="egreso" style="resize:none;overflow:auto;"></textarea>
               
-              <label>Campo cocupacional*</label>
+              <label>Campo ocupacional*</label>
               <textarea  rows="3" class="form-control" name="vision" id="campo" style="resize:none;overflow:auto;"></textarea>
 
               <label>Alumnos disponibles*</label>
@@ -177,7 +177,7 @@ echo '<input type="hidden" id="n" name="usuario" value="'. $_POST['nombre_univer
               </br>
                <button id ="borra" type="button" class="btn btn-warning">Eliminar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <input type="button" id ="Guardar" value="Guardar" class="btn btn-primary" data-loading-text="Loading...">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              
-              <a href="PED_DIAG_UniversidadesAlta.php"><button type="button" class="btn btn-danger">Regresar</button></a>   
+              <button type="button" class="btn btn-danger" onClick ="history.back()">Regresar</button> 
             </div>
           </form>          
         </div>
