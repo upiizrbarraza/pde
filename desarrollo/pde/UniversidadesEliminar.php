@@ -2,9 +2,7 @@
 include 'php/conexion.php';
 
 $nombre = $_POST['nom'];
-$direccion = $_POST['dir'];
 
-$correo = $_POST['cor'];
 
 
 $selec = "SELECT * FROM universidades WHERE nombre = '".$nombre."'";

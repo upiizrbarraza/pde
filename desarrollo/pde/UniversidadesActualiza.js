@@ -1,10 +1,47 @@
 $( document ).ready(function(){
+    var id = $("#universidad").val();
+    var nombre_uni = $("#nombre_uni").val();
+    var direccion_uni = $("#direccion_uni").val();
+    var telefono1_uni = $("#telefono1_uni").val();
+    var telefono2_uni = $("#telefono2_uni").val();
+    var correo_uni = $("#correo_uni").val();
+    var como_uni = $("#como_uni").val();
+    var sitio_uni = $("#sitio_uni").val();
+    var contacto_uni = $("#contacto_uni").val();
+    var mision_uni = $("#mision_uni").val();
+    var vision_uni = $("#vision_uni").val();
+    var servicio_uni = $("#servicio_uni").val();
+    var logo_uni = $("#logo_uni").val();
+
+    if(servicio_uni==1){
+      $('#ant1').attr('checked',true) 
+    }
+    else{
+      $('#ant1').attr('checked',false)
+    }
+
+    $("#nombre_universidad").val(nombre_uni);
+    $("#direccion_universidad").val(direccion_uni);
+    $("#telefono1_universidad").val(telefono1_uni);
+    $("#telefono2_universidad").val(telefono2_uni);
+    $("#c_llegar").val(como_uni);
+    $("#correo_universidad").val(correo_uni);
+    $("#num_empleados").val(contacto_uni);
+     $("#vision").val(vision_uni);
+     $("#mision").val(mision_uni);
+     
+     $("#web_universidad").val(sitio_uni);
+    
+
+    
+
+
   
 	       
 	$('#actualizar').click(function(){
    
           var id = $("#universidad").val();
-          var boton = $("#ant1").val();
+          var boton = 1;
           var boton1 = 0;
           var nombre = $("#nombre_universidad").val();
           var direccion = $("#direccion_universidad").val();
@@ -21,8 +58,9 @@ $( document ).ready(function(){
           
 
    
-   if(log != "" && nombre != "" && direccion != "" && tel1 != "" && tel2 != "" && correo != "" && contacto != "" && vision != "" && mision != ""){
-         if($('#ant1').attr('checked',true)){
+   if(nombre != "" && direccion != "" && tel1 != "" && tel2 != "" && correo != "" && contacto != "" && vision != "" && mision != ""){
+         if(document.getElementById('ant1').checked){
+          
           $.ajax({
           	url: "UniversidadesActualiza.php",
                method: "post",
@@ -32,6 +70,7 @@ $( document ).ready(function(){
           });
         }
         else{
+         
           $.ajax({
             url: "UniversidadesActualiza.php",
                method: "post",
@@ -69,7 +108,7 @@ function vincular(){
   var nombre = document.getElementById('nombre_universidad').value;
   var direccion = "PED_DIAG_OpcionesVinculacion.php?name=";
 
-  window.location.href =direccion+nombre;
+  window.location.href =direccion+nombre; 
 }
 
 

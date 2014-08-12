@@ -34,8 +34,10 @@
    <?php 
              include 'php/conexion.php';
              $carreras ="";
+             $espacio = "\n";
 
               $Universidad = $_GET['idUniversidad'];
+
               $consulta ="SELECT * FROM universidades WHERE idUniversidad ='".$Universidad."'"; 
               $respuesta =mysql_query($consulta); 
 
@@ -47,7 +49,7 @@
               $respuesta_carreras=mysql_query($consulta_carreras); 
 
               while ($registro_carreras=mysql_fetch_array($respuesta_carreras)){
-                $carreras = $carreras." * ".$registro_carreras['nombre'];
+                $carreras = $carreras.$espacio.$registro_carreras['nombre'];
               }
 
   
@@ -191,12 +193,13 @@
                 <?php
                 $consulta_select = "SELECT * FROM opcionesvinculacion WHERE Universidades_idUniversidad= '$Universidad'";
                 $respuesta_select =mysql_query($consulta_select); 
-                echo "<label>Porpuesta de vinculaci&oacute;n</label>";
+                echo "<label>Porpuesta de vinculaci&oacute;n&nbsp;</label>";
                 echo '<select required id="opcion">';
-                echo '<option value="default">Elige tu opci&oacute;n </option>';
+                
                 while ($registro_select=mysql_fetch_array($respuesta_select)){
                      echo "<option value='".$registro_select['descripcion']."'>".$registro_select['descripcion']."</option>";
                  }
+                 echo '<option value="default">Otra</option>';
                 
                   
                   
@@ -205,14 +208,21 @@
                 </br>
                 </br>
 
-                <label>Otros</label>  
+                <label id="etiqueta" style="hidden">Otros</label>  
                 <input type="text" value="" maxlength="100" class="form-control" name="otro" id="otro">
 
                 <label>Apoyo municipal propuesto</label></br>
-                <select required id="">
-                  <option value="default">Elige tu opci&oacute;n </option>
-                  <option value="Ayuda">Ayuda</option>
-                </select>
+                <?php
+                $consulta_apoyos = "SELECT * FROM apoyos";
+                $respuesta_apoyos =mysql_query($consulta_apoyos); 
+                echo '<select required id="apoyos_select">';
+                echo '<option value="default">Elige tu opci&oacute;n </option>';
+                while ($registro_apoyos=mysql_fetch_array($respuesta_apoyos)){
+                     echo "<option value='".$registro_apoyos['nombre']."'>".$registro_apoyos['nombre']."</option>";
+                 }
+                  
+               echo "</select>";
+               ?>
 
                 </br>
                 </br>

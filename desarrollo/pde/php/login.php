@@ -16,7 +16,7 @@
       $data=mysql_fetch_array($query);
       if ($row == 1){
       $_SESSION['userauth'] = $data['nombre'];
-      header('location: ../PED_DIAG_ApoyosMunicipalesIndex.php');
+      header('location: ../PED_DIAG_SDEIndex.php');
       }else{
       header('location: ../PED_DIAG_LoginPDE.php');
       }
