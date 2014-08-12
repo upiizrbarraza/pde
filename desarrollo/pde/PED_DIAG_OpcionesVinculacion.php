@@ -35,25 +35,6 @@
      <?php 
              include 'php/conexion.php';
              $Universidad = $_GET['name'];
-
-             $contador = 0;
-             $consulta_nueva = "SELECT * FROM universidades";
-             $resultado_nueva = mysql_query($consulta_nueva);
-             while($registro_nueva = mysql_fetch_array($resultado_nueva)){
-                     if($registro_nueva['nombre'] == $Universidad){
-      
-                          $contador = 1;
-
-                      }
-              }
-
-  if($contador == 0){
-    $inserta_nueva = "INSERT INTO universidades (nombre) values('".$Universidad."')";
-     mysql_query($inserta_nueva);
-  }
-
-
-
              echo "<input type='hidden' id='uni' value='".$Universidad."'/>";
 
               ?>
@@ -169,7 +150,7 @@
                       
              <div class="col-md-4" align="rights">     
 
-              <label>Opci&oacute;n de Vinculaci&oacute;n*</label>
+              <label>Opci&oacute;n de Vinculaci&oacute;*</label>
               <input type="text" maxlength="100" class="form-control" name="cantidad" id="cantidad">
 
             </div>
@@ -191,7 +172,7 @@
             <div class="col-md-12" align="center" style="text-align:center">
               </br>
               </br>              
-              <button type="button" class="btn btn-warning" onClick="history.back()"><i class="fa fa-reply fa-lg"></i>&nbsp;&nbsp;&nbsp;Regresar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             
+              <a href="PED_DIAG_UniversidadesAlta.php"><button type="button" class="btn btn-warning"><i class="fa fa-reply fa-lg"></i>&nbsp;&nbsp;&nbsp;Regresar</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             
               
             </div>
           </form>          

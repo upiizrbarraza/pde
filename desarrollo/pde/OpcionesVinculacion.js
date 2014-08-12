@@ -1,6 +1,5 @@
 $( document ).ready(function(){
 	$('#guardar').click(function(){
-    var vacio = '';
 	var nombre = $('#cantidad').val();
 	var id = $('#uni').val();
 
@@ -15,9 +14,6 @@ $( document ).ready(function(){
             
               $('#mostraraqui').html(msg).fadeOut(1000).fadeIn(2000); 
           });
-          $('#cantidad').val(vacio);
           });
-
-  
 	
 });

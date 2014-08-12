@@ -183,19 +183,19 @@
               </br>
               
               Provee el servicio "Generación de misión y visión"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type='checkbox' id='ant1' value='1'>
+              <input type='radio' id='ant1' value='1'>
               </br>
               </br>
 
-              <label>Carreras</label>&nbsp;&nbsp;
-              <a href='PED_DIAG_CarrerasAlta.php'><button type="submit" onClick ="Guarda()" class='btn btn-danger'>Ver Carreras</button></a>
+              <label>Carreras*</label>
+              <a href='PED_DIAG_CarrerasActualiza.php'><button type="submit" onClick ="Guarda()" class='btn btn-danger'>Ver Carreras</button></a>
               
             </br>
               </br>
               <div id="control">
               </div>
 
-              <label>Opciones de Vinculaci&oacute;n</label>&nbsp;&nbsp;
+              <label>Opciones de Vinculaci&oacute;n*</label>
               <!---<a href="PED_DIAG_OpcionesVinculacion.php">--><button onClick="vincular()" type="button" class="btn btn-danger">Vinculaci&oacute;n</button><!---</a>-->
               </br>
               </br>
@@ -223,7 +223,7 @@
                       <h4 class="modal-title" id="myModalLabel">Registro Correcto</h4>
                     </div>
                     <div class="modal-body">
-                      <p>La actualización de su universidad se ha realizado exitosamente y los datos fueron enviados al proceso de validación.</p>
+                      <p>El registro de su empresa se ha realizado exitosamente y los datos fueron enviados al proceso de validación.</p>
                       <p>En los próximos días usted recibirá un correo indicándole si la solicitud de registro fue aceptada o rechazada. 
                       Le sugerimos estar atento a los medios de contacto provisto para su universidad en esta aplicación. 
                       La Presidencia de Fresnillo agradece su colaboración.</p>

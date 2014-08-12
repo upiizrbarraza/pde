@@ -109,7 +109,7 @@
     <div id="content" class="content full">
       <div class="container">
         <div class="row">          
-          <form action="php/registroUsuarios.php" type="post">
+          <form action="#" type="post">
 
           <!-- Start Colum 1 -->  
             <div class="col-md-6"  align="center">          
@@ -119,19 +119,19 @@
                 <h4 class="spaced">Registrarse</h4></br>
 
                 <label>Usuario</label>
-                <input type="text" value="" maxlength="100" class="form-control" name="user" id="user" size="10" required>
+                <input type="text" value="" maxlength="100" class="form-control" name="usr" id="usr" size="10" required>
 
                 <label>E-mail</label>
-                <input type="text" value="" maxlength="100" class="form-control" name="mail" id="mail" size="10" required>
+                <input type="text" value="" maxlength="100" class="form-control" name="usr" id="usr" size="10" required>
               
                 <label>Contraseña</label>
                 <input type="password" value="" maxlength="100" class="form-control" name="cont" id="cont" size="10" required>
 
                 <label>Confirmar Contraseña</label>
-                <input type="password" value="" maxlength="100" class="form-control" name="pass" id="pass" size="10" required>              
+                <input type="password" value="" maxlength="100" class="form-control" name="cont" id="cont" size="10" required>              
               
                 </br>
-                <button type="submit" class="btn btn-success"><i class="fa fa-floppy-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Guardar</button>   
+                <button type="button" class="btn btn-success"><i class="fa fa-floppy-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Guardar</button>   
                 </br>
                 </br>
                 </br>

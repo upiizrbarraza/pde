@@ -1,52 +1,25 @@
 $( document ).ready(function(){
-  $("#otro").hide();
-  $("#etiqueta").hide();
-
-
-
-  $('#opcion').change(function(){
-    var opcion_checar = $("#opcion").val();
-     var otro_checar = $("#otro").val();
-      var etiqueta_checar = $("#etiqueta").val();
-
-      if(opcion_checar == 'default'){
-      $("#otro").show();
-  $("#etiqueta").show();
-
-  }
-  else{
-     $("#otro").hide();
-     $("#etiqueta").hide();
-  }
-
-        
-        });
-       
-
-
   
 	$('#correo').click(function(){
     
 
           var id = $("#i").val();
           
-          var apoyo = $("#apoyos_select").val();
           var descripcion = $("#descripcion").val();
+         
           var opcion = $("#opcion").val();
           var otro = $("#otro").val();
-          
 
           if(opcion != "default"){
-            
+            alert('es diferente')
 
           $.ajax({
 
           	   url: "VinculacionUniversidades.php",
                method: "post",
-               data: {ide: id, des:descripcion, op: opcion, apo: apoyo}
+               data: {ide: id, des:descripcion, op: opcion}
           }).done(function(msg){  
-            alert(msg)
-            
+             alert(msg)
 
           });
         }
@@ -55,7 +28,7 @@ $( document ).ready(function(){
 
                url: "VinculacionUniversidades.php",
                method: "post",
-               data: {ide: id, des:descripcion, op: otro, apo: apoyo}
+               data: {ide: id, des:descripcion, op: otro }
           }).done(function(msg){  
              alert(msg)
 
@@ -64,5 +37,4 @@ $( document ).ready(function(){
         }
 	});
   });
-
 

@@ -25,6 +25,8 @@
 <!-- SCRIPTS
   ================================================== -->
 <script src="js/modernizr.js"></script><!-- Modernizr -->
+<script type="text/javascript" src="jquery\jquery.js"></script>
+<script type="text/javascript" src="EmpresasAlta.js"></script>
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
@@ -54,7 +56,7 @@
           <div class="col-md-12">
             <nav class="navigation">
               <ul class="sf-menu">
-              <li><a href="PED_DIAG_index.php"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Incio</a>
+                <li><a href="PED_DIAG_index.php"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Incio</a>
                   <!--<ul class="dropdown">
                     <li><a href="index.html">Home version 1</a></li>
                     <li><a href="index1.html">Home version 2</a></li>
@@ -103,13 +105,13 @@
   </header>
   <!-- End Site Header --> 
   <!-- Start Nav Backed Header -->
-  <div class="nav-backed-header parallax" style="background-image:url(http://www.conicyt.cl/fondef/files/2012/10/iStock_000017149453Medium.jpg);">
+  <div class="nav-backed-header parallax" style="background-image:url(http://www.bolsaplus.com/datos/imagenes/empresa.jpg);">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <ol class="breadcrumb">
             <li><a href="index.html">Index</a></li>
-            <li class="active">Administraci&oacute;n</li>
+            <li class="active">Registro Empresas</li>
           </ol>
         </div>
       </div>
@@ -121,7 +123,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-           <p class="drop-caps secondary">A</br></br><h1>dministraci&oacute;n</h1></p>
+           <p class="drop-caps secondary">E</br></br><h1>mpresas</h1></p>
         </div>
       </div>
     </div>
@@ -133,194 +135,96 @@
       <div class="container">
         <div class="row">
           <!-- Start Colum 1 -->
-          <div class="col-md-12"  align="center">
+          <form >
+            <div class="col-md-12" style="text-align:center">
+              <h4 class="spaced">Registro de Empresas</h4>   
+            </div>
+            <div class="col-md-6" align="rights">  
 
-            <div class="col-md-12" align="center" style="text-align:right">
+              <label>Nombre*</label>
+              <input type="text" value="" maxlength="100" class="form-control" name="nombre_empresa" id="nombre_empresa">
+            
+              <label>Dirección*</label>
+              <input type="text" value="" maxlength="100" class="form-control" name="direccion_empresa" id="direccion_empresa">
+
+              <label>Telefonos</label>
+              <input type="text" value="" maxlength="100" class="form-control" name="telefono1_empresa" id="telefono1_empresa">
+
+              <input type="text" value="" maxlength="100" class="form-control" name="telefono2_empresa" id="telefono2_empresa">
+
+              <label>Contacto*</label>
+              <input type="text" value="" maxlength="100" class="form-control" name="contacto" id="contacto">
+
+              <label>Correo*</label>
+              <input type="email" value="" maxlength="100" class="form-control" name="correo_empresa" id="correo_empresa">
+              
+              <label>Sito Web</label>
+              <input type="text" value="" maxlength="100" class="form-control" name="web_empresa" id="web_empresa">
+
+              <label>N&uacute;mero de empleados*</label>
+              <input type="text" value="" maxlength="100" class="form-control" name="num_empleados" id="num_empleados">
+            
+              <label>Antiguedad</label></br>
+              <input type="radio" id="ant1" value="1">Menos de un año &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" id="ant2" value="2">Entre 2 a 3 años &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" id="ant3" value="3">M&aacute;s de 3 años
+              
+            </div> 
+          <!-- Start Colum 2 -->
+            <div class="col-md-6" align="rights">              
+
+              <label>Descrip&oacute; de servicios*</label>
+              <textarea  rows="3" class="form-control" name="descripcion" id="descripcion" style="resize:none;overflow:auto;"></textarea>
+
+              <input type="checkbox" name="solicita" id="solicitaMisVis"/>Solicitar generación de Misión y Visión de mi empresa<br/>
+
+              <label>Visi&oacute;n*</label>
+              <textarea  rows="3" class="form-control" name="vision" id="vision" style="resize:none;overflow:auto;"></textarea>
+
+              <label>Misi&oacute;n*</label>
+              <textarea  rows="3" class="form-control" name="mision" id="mision" style="resize:none;overflow:auto;"></textarea>
+
+              <label>Productos*</label>
+              <textarea  rows="3" class="form-control" name="productos" id="productos" style="resize:none;overflow:auto;"></textarea>
+
+              <label>Cargar logotipo*</label>
+              <input type="file" value="Logo" id="logo" class="btn btn-primary" data-loading-text="Loading..." > 
               </br>
               </br>
-              <a href="#"><button type="button" class="btn btn-danger"><i class="fa fa-power-off"></i>&nbsp;&nbsp;&nbsp;Cerrar sesi&oacute;n</button></a>             
+              <a href="PED_EmpresasVacantes.php"><input type="button" value="Cargar Vacantes" class="btn btn-success"></a>            
+
+            </div>
+            <div class="col-md-12" align="center" style="text-align:center">
               </br>
               </br>
-            </div>                        
-
-            <div class="tabs">
-            <ul class="nav nav-tabs">
-              <li class="active"> <a data-toggle="tab" href="#sampletab1"> Validar Empresas </a> </li>
-              <li> <a data-toggle="tab" href="#sampletab2"> Validar Universidades </a> </li>
-              <li> <a data-toggle="tab" href="#sampletab3">Administrar Servicios </a> </li>
-               <li> <a data-toggle="tab" href="#sampletab4"> Administrar Usuarios </a> </li>
-              <li> <a data-toggle="tab" href="#sampletab5"> Administrar Banners </a> </li>
-            </ul>
-            <div class="tab-content">
-              <div id="sampletab1" class="tab-pane active" style="overflow-y:scroll;height:400px">
-                <!-- Tab 1 -->
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th> ID </th>
-                      <th> Empresa </th>
-                      <th> Direcci&oacute;n </th>
-                      <th> ¿Qu&eacute; hacemos? </th>
-                      <th> Contacto </th>
-                      <th> Telefono </th>
-                      <th> Ver </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td> 1 </td>
-                      <td> Mark </td>
-                      <td> Otto </td>
-                      <td> @mdo </td>
-                      <td> @mdo </td>
-                      <td> @mdo </td>
-                      <td> 
-                        <a href="PED_DIAG_EmpresasDetalles.php"><button type="button" class="btn btn-primary"><i class="fa fa-plus fa-lg"></i>&nbsp;&nbsp;&nbsp;Detalles</button></a>
-                        </br>
-                        </br>
-                        <button type="button" class="btn btn-info"><i class="fa fa-check-square-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Aceptar</button>
-                      </td>
-                    </tr>                 
-                  </tbody>
-                </table>      
-
-              </div>
-              <!-- Tab 2 -->
-              <div id="sampletab2" class="tab-pane" style="overflow-y:scroll;height:400px">
-                
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th> ID </th>
-                      <th> Universidad </th>
-                      <th> Direcci&oacute;n </th>
-                      <th> Carreras </th>
-                      <th> Contacto </th>
-                      <th> Telefono </th>
-                      <th> Ver </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td> 1 </td>
-                      <td> Mark </td>
-                      <td> Otto </td>
-                      <td> @mdo </td>
-                      <td> @mdo </td>
-                      <td> @mdo </td>
-                      <td> 
-                        <a href="PED_DIAG_UniversidadesDetalles.php"><button type="button" class="btn btn-primary"><i class="fa fa-plus fa-lg"></i>&nbsp;&nbsp;&nbsp;Detalles</button></a>
-                        </br>
-                        </br>
-                        <button type="button" class="btn btn-info"><i class="fa fa-check-square-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Aceptar</button>
-                      </td>
-                    </tr>                 
-                  </tbody>
-                </table>
-
-              </div>
-              <!-- Tab 3 -->
-              <div id="sampletab3" class="tab-pane" style="overflow-y:scroll;height:400px">
-
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th> Servicio </th>
-                      <th> Proveedor </th>
-                      <th> Objetivo </th>
-                      <th> Herramientas </th>                        
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td> Otto </td>
-                      <td> Mark </td>
-                      <td> Otto </td>                        
-                      <td>
-                        <a href="PED_DIAG_ApoyosMuinicipalesComunicado.php"><i class="fa fa-users fa-lg"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <i class="fa fa-times-circle fa-lg" onclick=""></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="PED_DIAG_ApoyosMuinicipalesAlta.php"><i class="fa fa-pencil fa-lg"></i></a>
-                      </td>
-                    </tr>                 
-                  </tbody>
-                </table>
-
-              </div>
-              <!-- Tab 4 -->
-              <div id="sampletab4" class="tab-pane" style="overflow-y:scroll;height:400px">
-
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th> Tipo </th>
-                      <th> Nombre </th>
-                      <th> Departamento </th>
-                      <th> Herramientas </th>                                               
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td> Otto </td>
-                      <td> Mark </td>
-                      <td> Otto </td>
-                      <td> <i class="fa fa-times-circle fa-lg" onclick=""></i> </td>                       
-                    </tr>                 
-                  </tbody>
-                </table>
-                <div class="col-md-12" align="center" style="text-align:center">
-                  </br>
-                  </br>
-                  <a href="#"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus fa-lg"></i>&nbsp;&nbsp;&nbsp;Agregar</button></a>
-                          
-                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                          <h4 class="modal-title" id="myModalLabel">Registro de usuario</h4>
-                        </div>
-                        <div class="modal-body">Contenido
-
-
-                        </div>
-                        <div class="modal-footer">
-                          <a href="PED_DIAG_SDEIndex.php"><button type="button"  class="btn btn-default inverted"><i class="fa fa-times fa-lg"></i>&nbsp;&nbsp;&nbsp;Cancelar</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          <button type="button" class="btn btn-default inverted"><i class="fa fa-floppy-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Guardar</button>                     
-                        </div>
-                      </div>
+              <button type="button" class="btn btn-danger" ><i class="fa fa-times fa-lg"></i>&nbsp;&nbsp;&nbsp;Elimianr empresa</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="PED_DIAG_Login.php"><button type="button" class="btn btn-warning"><i class="fa fa-reply fa-lg"></i>&nbsp;&nbsp;&nbsp;Regresar</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              
+              <button type="button" id="Guardar" class="btn btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-floppy-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Guardar</button>
+              
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Registro Correcto</h4>
                     </div>
-                  </div>             
+                    <div class="modal-body">
+                      <p>El registro de su empresa se ha realizado exitosamente y los datos fueron enviados al proceso de validación.</p>
+                      <p>En los próximos días usted recibirá un correo indicándole si la solicitud de registro fue aceptada o rechazada. 
+                      Le sugerimos estar atento a los medios de contacto provisto para su empresa en esta aplicación. 
+                      La Presidencia de Fresnillo agradece su colaboración.</p>
+                      <i class="fa fa-spinner fa-spin"></i>
+                    </div>
+                    <div class="modal-footer">                      
+                      <button type="button" class="btn btn-default inverted" data-dismiss="modal"><i class="fa fa-pencil-square-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Editar</button>
+                      <a href="PED_DIAG_EmpresasIndex.php"><button type="button" class="btn btn-default inverted"><i class="fa fa-check-square-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Aceptar</button></a>                    
+                    </div>
+                  </div>
                 </div>
-
-              </div>
-              <div id="sampletab5" class="tab-pane" style="overflow-y:scroll;height:400px">
-
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th> Nombre </th>
-                      <th> Pagina </th>                        
-                      <th> Descripci&oacute;n </th>
-                      <th> Archivo </th>                                               
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td> Otto </td>
-                      <td> Mark </td>
-                      <td> Mark </td>                        
-                      <td><input type="file" id="banner" name="banner" ></br></td>                       
-                    </tr>                 
-                  </tbody>
-                </table>               
               </div>
 
             </div>
-          </div>
-
-                       
-            
-          </div>         
+          </form>          
         </div>
       </div>
     </div>
@@ -343,15 +247,13 @@
             <li><a href="#">Desarrollo Economico</a></li>
             <li><a href="#">Coordinación de Servicios</a></li>
             <li><a href="#">Reglamento del Servicio Profesional de Carrera del Municipio</a></li>
-            <li><a href="#">Agua Potable y alcantarillado</a></li>            
+            <li><a href="#">Agua Potable y alcantarillado</a></li>             
           </ul>
         </div>
         <div class="col-md-4 col-sm-4 widget footer-widget">
           <h4 class="footer-widget-title">Actividad en Twitter</h4>          
-
             <a class="twitter-timeline" href="https://twitter.com/GermanRodrguez1" data-widget-id="466110213909532672">Tweets por @GermanRodrguez1</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
         </div>
       </div>
     </div>
