@@ -15,9 +15,12 @@ $alumnos = $_POST['alu'];
   while($registro = mysql_fetch_array($resultado)){
   	if($registro['nombre'] == $nom){
   		$encontrado = $registro['idUniversidad'];
+ 
 
   	}
   }
+
+ 
 
 
 $inserta = "INSERT INTO carreras (nombre, objetivo, perfilIngreso, perfilEgreso, campo, alumnosDisponibles, Universidades_idUniversidad) values('".$nombre."','". $objetivo."', '".$ingreso."', '".$egreso."', '".$campo."', '".$alumnos."', '".$encontrado."')";

@@ -26,37 +26,17 @@
   ================================================== -->
 <script src="js/modernizr.js"></script><!-- Modernizr -->
 <script type="text/javascript" src="jquery\jquery.js"></script>
-<script type="text/javascript" src="OpcionesVinculacion.js"></script>
-<script type="text/javascript" src="OpcionesVinculacionMostrar.js"></script>
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="CarrerasAltaActualiza.js"></script>
+
 </head>
 <body>
+<?php
+$Universidad = $_GET['id'];
 
-     <?php 
-             include 'php/conexion.php';
-             $Universidad = $_GET['name'];
+echo '<input type="hidden" id="n" name="usuario" value="'. $Universidad.'">';
 
-             $contador = 0;
-             $consulta_nueva = "SELECT * FROM universidades";
-             $resultado_nueva = mysql_query($consulta_nueva);
-             while($registro_nueva = mysql_fetch_array($resultado_nueva)){
-                     if($registro_nueva['nombre'] == $Universidad){
-      
-                          $contador = 1;
+?>
 
-                      }
-              }
-
-  if($contador == 0){
-    $inserta_nueva = "INSERT INTO universidades (nombre) values('".$Universidad."')";
-     mysql_query($inserta_nueva);
-  }
-
-
-
-             echo "<input type='hidden' id='uni' value='".$Universidad."'/>";
-
-              ?>
 <!--[if lt IE 7]>
 	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 <![endif]-->
@@ -83,7 +63,7 @@
           <div class="col-md-12">
             <nav class="navigation">
               <ul class="sf-menu">
-                <li><a href="PED_DIAG_index.php"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Incio</a>
+                <li><a href="PED_DIAG_Index.php">Inicio</a>
                   <!--<ul class="dropdown">
                     <li><a href="index.html">Home version 1</a></li>
                     <li><a href="index1.html">Home version 2</a></li>
@@ -91,7 +71,7 @@
                     <li><a href="index3.html">Home version 4</a></li>
                   </ul>-->
                 </li>
-               <li><a href="PED_DIAG_EmpresasIndex.php"><i class="fa fa-building fa-lg"></i>&nbsp;&nbsp;&nbsp;Empresas</a>
+                <li><a href="PED_DIAG_EmpresasIndex.php">Empresas</a>
                   <!--<ul class="dropdown">
                     <li><a href="index.html">Home version 1</a></li>
                     <li><a href="index1.html">Home version 2</a></li>
@@ -99,14 +79,14 @@
                     <li><a href="index3.html">Home version 4</a></li>
                   </ul>-->
                 </li>
-                <li><a href="PED_DIAG_UniversidadesIndex.php"><i class="fa fa-graduation-cap fa-lg"></i>&nbsp;&nbsp;&nbsp;Universidades</a>
+                <li><a href="PED_DIAG_UniversidadesIndex.php">Universidades</a>
                   <!--<ul class="dropdown">
                     <li><a href="about.html">Overview</a></li>
                     <li><a href="contact.html">Where we meet</a></li>
                     <li><a href="our-staff.html">Our Staff</a></li>
                   </ul>-->
                 </li>                
-                <li><a href="PED_DIAG_ApoyosMuinicipalesIndex.php"><i class="fa fa-users fa-lg"></i>&nbsp;&nbsp;&nbsp;Apoyos</a>
+                <li><a href="PED_DIAG_ApoyosMuinicipalesIndex.php">Apoyos</a>
                   <!--<ul class="dropdown">
                     <li><a href="events.html">Events Listing</a></li>
                     <li><a href="events-timeline.html">Events Timeline</a></li>
@@ -115,14 +95,14 @@
                     <li><a href="single-event.html">Single Event</a></li>
                   </ul>-->
                 </li>
-                <li><a href="#"><i class="fa fa-search fa-lg"></i>&nbsp;&nbsp;&nbsp;Busqueda</a>
+                <li><a href="#">Busqueda</a>
                   <ul class="dropdown">
                     <li><a href="sermons.html">Vacantes</a></li>
                     <li><a href="single-sermon.html">Concepto</a></li>
                   </ul>
                 </li>
                 
-                <li><a href="PED_DIAG_Contacto.php"><i class="fa fa-envelope fa-lg"></i>&nbsp;&nbsp;&nbsp;Contactanos</a></li>
+                <li><a href="PED_DIAG_Contacto.php">Contactanos</a></li>
               </ul>
             </nav>
           </div>
@@ -160,39 +140,50 @@
   <div class="main" role="main">
     <div id="content" class="content full">
       <div class="container">
-        <div class="row">
+        <div class="row" >
           <!-- Start Colum 1 -->
-          <form action="PED_DIAG_CarrerasAlta.php" method="post">
+          <form>
             <div class="col-md-12" style="text-align:center">
-              <h4 class="spaced">Cargar Opciones de Vinculación</h4>   
-            </div>           
-                      
-             <div class="col-md-4" align="rights">     
-
-              <label>Opci&oacute;n de Vinculaci&oacute;n*</label>
-              <input type="text" maxlength="100" class="form-control" name="cantidad" id="cantidad">
-
+              <h4 class="spaced">Registro de Carrera</h4>   
             </div>
-            <!-- Start Colum 2 -->            
-             <div class="col-md-4" align="left">     
+            <div class="col-md-8 col-md-offset-2" align="center">  
 
-              </br>
+              <label>Nombre*</label>
+              <input type="text" value="" maxlength="100" class="form-control" name="nombre_universidad" id="nombre_universidad">
+            
+              <label>Objetivo*</label>
+              <textarea  rows="3" class="form-control" name="vision" id="objetivo" style="resize:none;overflow:auto;"></textarea>
 
-              <button type="button" id="guardar" class="btn btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-floppy-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Guardar</button>
+              <label>Perfil de ingreso*</label>
+              <textarea  rows="3" class="form-control" name="vision" id="ingreso" style="resize:none;overflow:auto;"></textarea>
 
+              <label>Perfil de egreso*</label>
+              <textarea  rows="3" class="form-control" name="vision" id="egreso" style="resize:none;overflow:auto;"></textarea>
+              
+              <label>Campo ocupacional*</label>
+              <textarea  rows="3" class="form-control" name="vision" id="campo" style="resize:none;overflow:auto;"></textarea>
+
+              <label>Alumnos disponibles*</label>
+              <input type="text" value="" maxlength="100" class="form-control" name="alumnos" id="num_empleados">              
+              
             </div>
-
-            <!-- Start Colum 3 -->
-            <div class="col-md-12" align="rights" id="mostraraqui">     
+            <div class="col-md-2" align="center">  
+            </br></br></br>  
+            
+                        
+              
+            </div>
 
             
 
-            </div>
             <div class="col-md-12" align="center" style="text-align:center">
               </br>
-              </br>              
-              <button type="button" class="btn btn-warning" onClick="history.back()"><i class="fa fa-reply fa-lg"></i>&nbsp;&nbsp;&nbsp;Regresar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             
+              </br>
               
+             
+              <input type="button" id ="Guardar" value="Guardar"  class="btn btn-primary" data-loading-text="Loading...">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+                      
+              <button type="button" class="btn btn-danger" onClick ="history.back()">Regresar</button> 
             </div>
           </form>          
         </div>

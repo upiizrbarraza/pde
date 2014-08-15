@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html class="no-js">
 <head>
@@ -26,34 +27,17 @@
   ================================================== -->
 <script src="js/modernizr.js"></script><!-- Modernizr -->
 <script type="text/javascript" src="jquery\jquery.js"></script>
-<script type="text/javascript" src="OpcionesVinculacion.js"></script>
-<script type="text/javascript" src="OpcionesVinculacionMostrar.js"></script>
+<script type="text/javascript" src="OpcionesVinculacionActualiza.js"></script>
+<script type="text/javascript" src="OpcionesVinculacionMostrarActualiza.js"></script>
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 
      <?php 
              include 'php/conexion.php';
-             $Universidad = $_GET['name'];
+             $Universidad = $_GET['id'];
 
-             $contador = 0;
-             $consulta_nueva = "SELECT * FROM universidades";
-             $resultado_nueva = mysql_query($consulta_nueva);
-             while($registro_nueva = mysql_fetch_array($resultado_nueva)){
-                     if($registro_nueva['nombre'] == $Universidad){
-      
-                          $contador = 1;
-
-                      }
-              }
-
-  if($contador == 0){
-    $inserta_nueva = "INSERT INTO universidades (nombre) values('".$Universidad."')";
-     mysql_query($inserta_nueva);
-  }
-
-
-
+             
              echo "<input type='hidden' id='uni' value='".$Universidad."'/>";
 
               ?>

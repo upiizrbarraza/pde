@@ -148,11 +148,12 @@
                include 'php/conexion.php';
 
  
-               $Universidad = $_GET['idUniversidad'];
+               $Universidad = $_GET['id'];
+
                 echo '<input type="hidden" id="n" name="usuario" value="'.$Universidad.'">';
                //echo '<input type="hidden" id="n" name="usuario" value="'. $_POST['nombre_universidad'].'">';
                //$uni = $_POST['nombre_universidad'];
-               $consulta ="SELECT * FROM carreras WHERE Universidades_idUniversidad ='".$Universidad."'"; 
+               $consulta ="SELECT * FROM carreras WHERE idCarrera ='".$Universidad."'"; 
               $respuesta =mysql_query($consulta); 
               
 
@@ -188,9 +189,8 @@
               echo '</br>';
               echo '</br>';
                $orden = $registro['idCarrera'];
-              echo '<button id ="borra" type="button" onClick="Borrar('.$orden.')" class="btn btn-warning">Eliminar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ';             
              
-              echo '<input type="button" onClick="Actualiza('.$orden.')" id ="Guardar" value="Actualizar" class="btn btn-primary" data-loading-text="Loading...">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ';             
+              echo '<input type="button" onClick="Actualiza('.$orden.')" id ="Guardar" value="Actualizar" class="btn btn-primary" data-loading-text="Loading...">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';             
               echo '<button type="button" class="btn btn-danger" onClick="history.back()">Regresar</button>';  
             echo '</div>';
              echo "<br />";
@@ -201,9 +201,7 @@
               echo "<br />";
               echo "<br />";
               
-              echo "<br />";
-              echo "<br />";
-               echo "<hr  width='100%'/>";
+              
               
               }            
               ?>

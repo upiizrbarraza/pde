@@ -26,33 +26,15 @@
   ================================================== -->
 <script src="js/modernizr.js"></script><!-- Modernizr -->
 <script type="text/javascript" src="jquery\jquery.js"></script>
-<script type="text/javascript" src="OpcionesVinculacion.js"></script>
-<script type="text/javascript" src="OpcionesVinculacionMostrar.js"></script>
+<script type="text/javascript" src="CarrerasListado.js"></script>
+
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 
      <?php 
              include 'php/conexion.php';
-             $Universidad = $_GET['name'];
-
-             $contador = 0;
-             $consulta_nueva = "SELECT * FROM universidades";
-             $resultado_nueva = mysql_query($consulta_nueva);
-             while($registro_nueva = mysql_fetch_array($resultado_nueva)){
-                     if($registro_nueva['nombre'] == $Universidad){
-      
-                          $contador = 1;
-
-                      }
-              }
-
-  if($contador == 0){
-    $inserta_nueva = "INSERT INTO universidades (nombre) values('".$Universidad."')";
-     mysql_query($inserta_nueva);
-  }
-
-
+             $Universidad = $_GET['idUniversidad'];
 
              echo "<input type='hidden' id='uni' value='".$Universidad."'/>";
 
@@ -164,34 +146,29 @@
           <!-- Start Colum 1 -->
           <form action="PED_DIAG_CarrerasAlta.php" method="post">
             <div class="col-md-12" style="text-align:center">
-              <h4 class="spaced">Cargar Opciones de Vinculación</h4>   
+              <h4 class="spaced">Listado de Carreras</h4>   
             </div>           
                       
-             <div class="col-md-4" align="rights">     
-
-              <label>Opci&oacute;n de Vinculaci&oacute;n*</label>
-              <input type="text" maxlength="100" class="form-control" name="cantidad" id="cantidad">
-
-            </div>
+            
             <!-- Start Colum 2 -->            
-             <div class="col-md-4" align="left">     
+       
+        <div id="mostraraqui">
+      </div> 
+ 
 
-              </br>
+      
 
-              <button type="button" id="guardar" class="btn btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-floppy-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Guardar</button>
-
-            </div>
 
             <!-- Start Colum 3 -->
-            <div class="col-md-12" align="rights" id="mostraraqui">     
-
-            
-
-            </div>
+        
             <div class="col-md-12" align="center" style="text-align:center">
               </br>
               </br>              
-              <button type="button" class="btn btn-warning" onClick="history.back()"><i class="fa fa-reply fa-lg"></i>&nbsp;&nbsp;&nbsp;Regresar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             
+              <button type="button" class="btn btn-warning" onClick="history.back()"><i class="fa fa-reply fa-lg"></i>&nbsp;&nbsp;&nbsp;Regresar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+             <?php
+              echo '<a href="PED_DIAG_CarrerasAltaActualiza.php?id='.$Universidad.'"><button type="button" class="btn btn-danger" >&nbsp;&nbsp;Agregar&nbsp;&nbsp;</button>';
+              ?>
+
               
             </div>
           </form>          

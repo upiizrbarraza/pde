@@ -210,13 +210,15 @@
 }
               
               echo "<label>Carreras*</label>";
-              echo "<a href='PED_DIAG_CarrerasActualiza.php?idUniversidad=".$id."'><button class='btn btn-danger'>Ver Carreras</button></a>";
+              echo "<a href='PED_DIAG_CarrerasListado.php?idUniversidad=".$id."'><button class='btn btn-danger'>Ver Carreras</button></a>";
               ?> 
             </br>
               </br>
 
               <label>Opciones de Vinculaci&oacute;n*</label>
-              <button type="button" onClick="vincular()" class="btn btn-danger">Vinculaci&oacute;n</button>
+              <?php
+              echo "<a href='PED_DIAG_OpcionesVinculacionActualiza.php?id=".$id."'><button type='button' class='btn btn-danger'>Vinculaci&oacute;n</button></a>";
+              ?>
               </br>
               </br>
               </br>
